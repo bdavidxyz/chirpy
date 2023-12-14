@@ -2,6 +2,20 @@
   Post-specific style
 */
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+figure img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 80%;
+}
+
+figure figcaption {
+  font-style: italic;
+  font-size: 80%;
+}
+
 %btn-post-nav {
   width: 50%;
   position: relative;

@@ -1,5 +1,5 @@
 ---
-title: Another article
+title: Action Mailer tutorial
 author: david
 date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
@@ -108,7 +108,7 @@ Ok ! Very interesting here.
 
 Create `app/views/layouts/mailer.html.erb`
 
-```html
+```erb
 <!-- inside app/views/layouts/mailer.html.erb -->
 <!DOCTYPE html>
 <html>
@@ -176,7 +176,7 @@ end
 
 Now create a file `welcome_email.html.erb` inside `app/views/hello_mailer` :
 
-```html
+```erb
 <!-- inside app/views/hello_mailer/welcome_email.html.erb -->
 <!DOCTYPE html>
 <html>
@@ -247,29 +247,29 @@ Now build the views
 ```
 
 Launch your local web server by running :
-```
+```shell
 $> bin/rails s
 ```
 
 The following screen should be displayed :
 
 <figure>  
-<img style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%" src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749283/rails/mailer1.png" loading="lazy" alt="localhost">  
-<figcaption style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%">localhost</figcaption>  
+<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749283/rails/mailer1.png" loading="lazy" alt="localhost">  
+<figcaption>localhost</figcaption>  
 </figure>  
 
 
 Now click the button, an email should be shown in a new tab :
 
 <figure>  
-<img style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%" src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749735/rails/mailer3.png" loading="lazy" alt="new tab">  
-<figcaption style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%">new tab</figcaption>  
+<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749735/rails/mailer3.png" loading="lazy" alt="new tab">  
+<figcaption>New tab</figcaption>  
 </figure>  
 
 
 Check the logs in the console :
 
-```
+```shell
 Processing by WelcomeController#email_sent as HTML
   Rendering layout layouts/application.html.erb
   Rendering welcome/email_sent.html.erb within layouts/application
@@ -304,7 +304,8 @@ Now the tricky part. In test mode,
 
 To avoid all this, open `config/environments/test.rb` :
 Add these 3 lines at the bottom of the file
-```
+
+```ruby
   config.action_mailer.default_url_options = { host: 'localhost', port: 5100 }
   config.action_mailer.delivery_method = :test
   config.active_job.queue_adapter = :test
