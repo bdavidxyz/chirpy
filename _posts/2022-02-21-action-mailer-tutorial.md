@@ -1,14 +1,14 @@
 ---
 title: Action Mailer tutorial
 author: david
-date: 2019-08-08 11:33:00 +0800
-categories: [Blogging, Demo]
-tags: [typography]
-pin: true
+date: 2022-02-21 11:33:00 +0800
+categories: [Rails]
+tags: [Rails, Mailing, Tutorial]
+pin: false
 math: true
 mermaid: true
 image:
-  path: v1702310772/newblog/Mediamodifier-Design-Template_2.jpg
+  path: v1702587216/newblog/action-mailer-tutorial/action_mailer_og.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
@@ -254,7 +254,7 @@ $> bin/rails s
 The following screen should be displayed :
 
 <figure>  
-<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749283/rails/mailer1.png" loading="lazy" alt="localhost">  
+<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1702568056/newblog/action-mailer-tutorial/action_mailer_1.png" loading="lazy" alt="localhost">  
 <figcaption>localhost</figcaption>  
 </figure>  
 
@@ -262,7 +262,7 @@ The following screen should be displayed :
 Now click the button, an email should be shown in a new tab :
 
 <figure>  
-<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749735/rails/mailer3.png" loading="lazy" alt="new tab">  
+<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1702568056/newblog/action-mailer-tutorial/action_mailer_2.png" loading="lazy" alt="new tab">  
 <figcaption>New tab</figcaption>  
 </figure>  
 
