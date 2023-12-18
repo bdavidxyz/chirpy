@@ -147,7 +147,7 @@ Time.now.present?   # custom object => true
   
 ## Conclusion  
   
-As a memo, I put here this decision table, freely inspired by [this article](http://sibevin.github.io/posts/2014-11-11-103928-rails-empty-vs-blank-vs-nil).  
+As a memo, I put here this decision table, freely inspired by [this article](https://sibevin.github.io/posts/2014-11-11-103928-rails-empty-vs-blank-vs-nil).  
   
   
 <table class="table table-striped table-bordered">  
@@ -321,7 +321,7 @@ Time.now.present?   # custom object => true
   
 ## Conclusion  
   
-As a memo, I put here this decision table, freely inspired by [this article](http://sibevin.github.io/posts/2014-11-11-103928-rails-empty-vs-blank-vs-nil).  
+As a memo, I put here this decision table, freely inspired by [this article](https://sibevin.github.io/posts/2014-11-11-103928-rails-empty-vs-blank-vs-nil).  
   
   
 <table class="table table-striped table-bordered">  
