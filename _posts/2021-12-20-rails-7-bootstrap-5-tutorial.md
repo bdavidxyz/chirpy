@@ -13,7 +13,6 @@ image:
   alt: Rails 7 and Bootstrap 5 alltogether
 ---
 
-
 ## 0. A big warning  
   
 At <strong>[BootrAils](https://bootrails.com)</strong>, we are very excited that Rails 7 is out since mid-december, 2021. The frontend assets management is once again completely different. Rails 6 almost dropped Sprockets in favor of Webpack  - see [this article](https://www.bootrails.com/blog/webpacker-vs-sprockets/), now Rails 7 almost dropped Webpack in favor of jsbundling-rails (with esbuild) + import maps + Sprockets.  
