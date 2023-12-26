@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: Bootrails # the main title
 
-tagline: Start with Rails 💎 # it will display as the sub-title
+tagline: Launch your MVP with Rails 💎 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A Ruby-on-Rais starter.
