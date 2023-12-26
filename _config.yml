@@ -73,7 +73,7 @@ theme_mode: # [dark|light]
 img_cdn: 'https://res.cloudinary.com/bdavidxyz-com/image/upload/fl_lossy/'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://res.cloudinary.com/bdavidxyz-com/image/upload/fl_lossy/v1702464205/newblog/bootrails_logo.png
+avatar: https://res.cloudinary.com/bdavidxyz-com/image/upload/v1702464205/newblog/globals/bootrails_logo.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
