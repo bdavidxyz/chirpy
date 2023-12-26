@@ -68,7 +68,7 @@ For a String, the signature is as follow:
 
  * `.split(pattern, limit)`
  * limit is a number, to define how much parts can be splitted.
- * *pattern* is a String or a [RegEx](/blog/ruby-regex-friendly-guide/)
+ * *pattern* is a String or a [RegEx](https://bootrails.com/blog/ruby-regex-friendly-guide/)
 
 Here is a example with a limit :
 
@@ -82,7 +82,7 @@ myString.split("_", 2)
 ### Array
 
  * `.split(pattern)`
- * *pattern* is a value or a [Block](/blog/ruby-block-procs-and-lambda/)
+ * *pattern* is a value or a [Block](https://bootrails.com/blog/ruby-block-procs-and-lambda/)
 
 ```ruby
 # Ruby
@@ -118,7 +118,7 @@ Loot at the
 # => [[1, 2, 3], [4, 5, 6], [7]]
 ```
 
-[Enumerators](/blog/ruby-enumerator-what-why-how/) are a feature of Ruby.
+[Enumerators](https://bootrails.com/blog/ruby-enumerator-what-why-how/) are a feature of Ruby.
 
 ## Conclusion
 
