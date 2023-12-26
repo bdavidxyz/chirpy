@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 gemspec
 
+ruby '3.2.2'
+
 group :test do
   gem "html-proofer", "~> 4.4"
 end
