@@ -1,7 +1,7 @@
 ---
 title: How to use Rails flash messages
 author: david
-date: 2022-02-21 11:33:00 +0800
+date: 2022-05-09 11:33:00 +0800
 categories: [Rails]
 tags: [Rails, Mailing, Tutorial]
 pin: false
