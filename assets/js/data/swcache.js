@@ -42,6 +42,7 @@ const allowedDomains = [
   'fonts.gstatic.com',
   'fonts.googleapis.com',
   'cdn.jsdelivr.net',
+  'bootrailsbeep.goatcounter.com',
   'polyfill.io'
 ];
 
