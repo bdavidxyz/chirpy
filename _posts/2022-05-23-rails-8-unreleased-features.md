@@ -1,18 +1,18 @@
 ---
-title: Rails 8 unreleased features
+title: "Rails 8 : unreleased features"
 author: david
 date: 2022-05-23 11:33:00 +0800
-categories: [Rails]
-tags: [Rails, Opinion]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails]
 pin: false
-math: true
-mermaid: true
+math: false
+mermaid: false
 image:
   path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Some dreams about Rails 8
+  alt: "Rails 8 : unreleased features"
 ---
- 
+
 ## Rails 8 : More confidence in existing tools  
   
 Rails tend to anticipate the trends - which means how neat are the maintainers. ActionText is one example. Before Trix, let's face it, giving any non-techie user the ability to write content was quite costly - or painful. Nowadays however, there are better tools than Trix. Simple features like "please create a `<p></p>` paragraph for every new paragraph" are still not released after years of PRs and requests from the community. I know, Open Source is given for free, and we should acclaim maintainer first instead of complaining. So first, **a big thank you to all maintainers**. Now for the Rails team, we would see two viable options :  

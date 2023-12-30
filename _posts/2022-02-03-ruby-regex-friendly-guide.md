@@ -1,19 +1,19 @@
 ---
-title: Ruby regex, a friendly guide
+title: "Ruby regex, a friendly guide"
 author: david
-date: 2022-01-27 11:33:00 +0800
-categories: [Ruby]
-tags: [Ruby, Article]
+date: 2022-02-03 11:33:00 +0800
+categories: [ruby]
+tags: [ruby]
 pin: false
 math: false
 mermaid: false
 image:
   path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Ruby regex, a friendly guide
+  alt: "Ruby regex, a friendly guide"
 ---
 
-In this guide, we are going to learn all about Ruby Regex. They are actually called Ruby Regular Expressions, and they should not be confused with Pattern Matching. If we just think generally, the regular expressions are used to define a search pattern. They are just a small sequence of characters. You use them to match or find a specific piece of string for processing and extracting data by defining search patterns. However there's a small difference with pattern matching. Let's learn everything about them in this guide.
+In this guide, we are going to learn all about Ruby Regex. They are actually called Ruby Regular Expressions, and they should not be confused with [Pattern Matching](https://www.bootrails.com/blog/ruby-pattern-matching/). If we just think generally, the regular expressions are used to define a search pattern. They are just a small sequence of characters. You use them to match or find a specific piece of string for processing and extracting data by defining search patterns. However there's a small difference with pattern matching. Let's learn everything about them in this guide.
 
 ## Ruby Regular Expressions
 
@@ -239,4 +239,3 @@ Anchors and boundaries will not count as characters
 Regular expressions are fantastic, but they may be a little challenging at times. You may design your ruby regex in a more dynamic fashion by using online tools. 
 
 It's now your chance to fire up that editor and get coding!
-

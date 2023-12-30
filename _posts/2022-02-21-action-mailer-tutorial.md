@@ -1,23 +1,23 @@
 ---
-title: Action Mailer tutorial
+title: "Action Mailer : a tutorial"
 author: david
 date: 2022-02-21 11:33:00 +0800
-categories: [Rails]
-tags: [Rails, Mailing, Tutorial]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails]
 pin: false
-math: true
-mermaid: true
+math: false
+mermaid: false
 image:
-  path: v1702587216/newblog/action-mailer-tutorial/action_mailer_og.png
+  path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Tutorial about action mailer
+  alt: "Action Mailer : a tutorial"
 ---
 
 ## Prerequisites
 
 Here are the tools we will use in this tutorial :
 
-```bash
+```
 $> ruby -v  
 ruby 3.1.0p0 // you need at least version 3 here  
 $> bundle -v  
@@ -27,7 +27,7 @@ $> npm -v
 $> yarn -v  
 1.22.10
 $> psql --version  
-psql (PostgreSQL) 13.1 // lets use a production-ready database locally  
+psql (PostgreSQL) 13.1 // let's use a production-ready database locally  
 $> redis-cli ping // redis is a dependency of Sidekiq
 PONG
 $> foreman -v
@@ -108,7 +108,7 @@ Ok ! Very interesting here.
 
 Create `app/views/layouts/mailer.html.erb`
 
-```erb
+```html
 <!-- inside app/views/layouts/mailer.html.erb -->
 <!DOCTYPE html>
 <html>
@@ -176,7 +176,7 @@ end
 
 Now create a file `welcome_email.html.erb` inside `app/views/hello_mailer` :
 
-```erb
+```html
 <!-- inside app/views/hello_mailer/welcome_email.html.erb -->
 <!DOCTYPE html>
 <html>
@@ -247,29 +247,29 @@ Now build the views
 ```
 
 Launch your local web server by running :
-```shell
+```
 $> bin/rails s
 ```
 
 The following screen should be displayed :
 
 <figure>  
-<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1702568056/newblog/action-mailer-tutorial/action_mailer_1.png" loading="lazy" alt="localhost">  
-<figcaption>localhost</figcaption>  
+<img style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%" src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749283/rails/mailer1.png" loading="lazy" alt="localhost">  
+<figcaption style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%">localhost</figcaption>  
 </figure>  
 
 
 Now click the button, an email should be shown in a new tab :
 
 <figure>  
-<img src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1702568056/newblog/action-mailer-tutorial/action_mailer_2.png" loading="lazy" alt="new tab">  
-<figcaption>New tab</figcaption>  
+<img style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%" src="https://res.cloudinary.com/bdavidxyz-com/image/upload/v1644749735/rails/mailer3.png" loading="lazy" alt="new tab">  
+<figcaption style="display:block;float:none;margin-left:auto;margin-right:auto;width:80%">new tab</figcaption>  
 </figure>  
 
 
 Check the logs in the console :
 
-```shell
+```
 Processing by WelcomeController#email_sent as HTML
   Rendering layout layouts/application.html.erb
   Rendering welcome/email_sent.html.erb within layouts/application
@@ -304,8 +304,7 @@ Now the tricky part. In test mode,
 
 To avoid all this, open `config/environments/test.rb` :
 Add these 3 lines at the bottom of the file
-
-```ruby
+```
   config.action_mailer.default_url_options = { host: 'localhost', port: 5100 }
   config.action_mailer.delivery_method = :test
   config.active_job.queue_adapter = :test

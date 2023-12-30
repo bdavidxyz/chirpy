@@ -1,16 +1,16 @@
 ---
-title: Rails 7, Bootstrap 5 tutorial... fear and relief
+title: "Rails 7, Bootstrap 5 tutorial : fear and relief"
 author: david
 date: 2021-12-20 11:33:00 +0800
-categories: [Rails]
-tags: [Rails, Tutorial, Opinion]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails]
 pin: false
 math: false
 mermaid: false
 image:
-  path: v1702650702/newblog/rails-7-bootstrap-5-tutorial/rails7bootstrap5_og.jpg
+  path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Rails 7 and Bootstrap 5 alltogether
+  alt: "Rails 7, Bootstrap 5 tutorial : fear and relief"
 ---
 
 ## 0. A big warning  

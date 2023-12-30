@@ -1,16 +1,16 @@
 ---
-title: Check emptiness in Ruby, nil? vs blank? vs empty? vs presence?
+title: "Milliseconds in Ruby"
 author: david
 date: 2022-01-27 11:33:00 +0800
-categories: [Ruby]
-tags: [Ruby, Article]
+categories: [ruby]
+tags: [ruby]
 pin: false
 math: false
 mermaid: false
 image:
   path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Check emptiness in Ruby
+  alt: "Milliseconds in Ruby"
 ---
 
 ## 1. Display time, down to milliseconds in Ruby
@@ -107,4 +107,3 @@ elapsed_time = time_b.to_ms - time_a.to_ms
 We found an interesting article [here](https://blog.dnsimple.com/2018/03/elapsed-time-with-ruby-the-right-way/) about Ruby's lack of precision with the clock. Whereas we do not very often need a high precision in the web industry, it's always good to know.
 
 Enjoy !
-

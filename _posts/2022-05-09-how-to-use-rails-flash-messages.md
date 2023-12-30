@@ -1,18 +1,17 @@
 ---
-title: How to use Rails flash messages
+title: "How to use Rails flash messages"
 author: david
 date: 2022-05-09 11:33:00 +0800
-categories: [Rails]
-tags: [Rails, Mailing, Tutorial]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails]
 pin: false
-math: true
-mermaid: true
+math: false
+mermaid: false
 image:
-  path: v1702587216/newblog/action-mailer-tutorial/action_mailer_og.png
+  path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: How to use Rails flash messages
+  alt: "How to use Rails flash messages"
 ---
-
 
 ## What are flash messages?
 

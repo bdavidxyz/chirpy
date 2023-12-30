@@ -1,16 +1,16 @@
 ---
-title: Ruby split array
+title: "Ruby Split Array"
 author: david
 date: 2022-12-22 11:33:00 +0800
-categories: [Ruby]
-tags: [Ruby, Article]
+categories: [ruby]
+tags: [ruby]
 pin: false
 math: false
 mermaid: false
 image:
   path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Ruby split array
+  alt: "Ruby Split Array"
 ---
 
 ## Split method for a Ruby array
@@ -68,7 +68,7 @@ For a String, the signature is as follow:
 
  * `.split(pattern, limit)`
  * limit is a number, to define how much parts can be splitted.
- * *pattern* is a String or a [RegEx](https://bootrails.com/blog/ruby-regex-friendly-guide/)
+ * *pattern* is a String or a [RegEx](/blog/ruby-regex-friendly-guide/)
 
 Here is a example with a limit :
 
@@ -82,7 +82,7 @@ myString.split("_", 2)
 ### Array
 
  * `.split(pattern)`
- * *pattern* is a value or a [Block](https://bootrails.com/blog/ruby-block-procs-and-lambda/)
+ * *pattern* is a value or a [Block](/blog/ruby-block-procs-and-lambda/)
 
 ```ruby
 # Ruby
@@ -118,8 +118,8 @@ Loot at the
 # => [[1, 2, 3], [4, 5, 6], [7]]
 ```
 
-[Enumerators](https://bootrails.com/blog/ruby-enumerator-what-why-how/) are a feature of Ruby.
+[Enumerators](/blog/ruby-enumerator-what-why-how/) are a feature of Ruby.
 
 ## Conclusion
 
-Split for an Array is not much different than the usual "split" for a String. Just remind that the result is always an Array that is one dimension _bigger_ than the initial Array. 
+Split for an Array is not much different than the usual "split" for a String. Just remind that the result is always an Array that is one dimension _bigger_ than the initial Array.
