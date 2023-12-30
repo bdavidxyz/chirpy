@@ -2,8 +2,8 @@
 title: "Rails console command made easier"
 author: david
 date: 2022-12-19 11:33:00 +0800
-categories: [ruby-on-rails]
-tags: [ruby-on-rails]
+categories: [rails]
+tags: [rails]
 pin: false
 math: false
 mermaid: false
