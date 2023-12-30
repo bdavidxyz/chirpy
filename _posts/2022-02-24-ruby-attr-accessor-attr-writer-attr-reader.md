@@ -1,5 +1,5 @@
 ---
-title: "Ruby - attr_accessor, attr_writer, and attr_reader"
+title: Ruby - attr_accessor, attr_writer, and attr_reader
 author: david
 date: 2022-02-24 11:33:00 +0800
 categories: [ruby]
@@ -10,7 +10,7 @@ mermaid: false
 image:
   path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: "Ruby - attr_accessor, attr_writer, and attr_reader"
+  alt: Ruby - attr_accessor, attr_writer, and attr_reader
 ---
 
 Let's start from a simple example. 

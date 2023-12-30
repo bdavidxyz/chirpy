@@ -1,5 +1,5 @@
 ---
-title: "Rails new app, options, and minimalistic approach"
+title: Rails new app, options, and minimalistic approach
 author: david
 date: 2021-03-16 11:33:00 +0800
 categories: [ruby-on-rails]
@@ -10,7 +10,7 @@ mermaid: false
 image:
   path: v1702310772/newblog/globals/Mediamodifier-Design-Template_2.jpg
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: "Rails new app, options, and minimalistic approach"
+  alt: Rails new app, options, and minimalistic approach
 ---
 
 ## How to create a new Rails app
