@@ -96,5 +96,8 @@
   {% endunless %}
 
   {% include metadata-hook.html %}
-  {% include sender.html %}
+  {% if jekyll.environment == "production" %}
+    {% include sender.html %}
+  {% endif %}
+
 </head>
