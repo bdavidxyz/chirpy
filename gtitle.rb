@@ -1,5 +1,7 @@
 require 'uri'
 
+# <a href="foo" target="_blank">foo</a> 
+
 def generate_image_url(title, subtitle)
   base_url = "https://res.cloudinary.com/bdavidxyz-com/image/upload"
   image_options = "/w_1600,h_836,q_100"
