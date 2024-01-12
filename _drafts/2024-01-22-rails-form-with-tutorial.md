@@ -1,7 +1,7 @@
 ---
 title: Rails form_with tutorial
 author: david
-date: 2024-01-04 11:33:00 +0800
+date: 2024-01-22 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false

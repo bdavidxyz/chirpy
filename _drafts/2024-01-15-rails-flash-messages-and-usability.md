@@ -1,7 +1,7 @@
 ---
 title: Rails flash messages and usability
 author: david
-date: 2024-01-06 11:33:00 +0800
+date: 2024-01-15 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false
