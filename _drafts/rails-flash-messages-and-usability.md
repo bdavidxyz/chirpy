@@ -30,7 +30,7 @@ It sounds like this :
 
 It helps to make obvious what worked well, and what didn't.
 
-## Flash messages, server-side : the easy parts
+## Flash messages, server-side : the easy part
 
 On the server side, a flash message look like this :
 
@@ -77,9 +77,9 @@ As you can see, there are tons of ways to render the flash message, but there ar
  - A toast message is less intrusive than a HTML banner
  - A modal is super-intrusive
 
- Notice that "intrusive" doesn't mean "bad". It just means "somewhat dangerous".
+ Notice that "intrusive" doesn't mean "bad". It just correlated to the degree of dangerousness of the current action.
 
- Typically, if you try to delete a Github repository, you will probably have a User Experience that match the top of the pyramid, because you will loose data in a irreversible way.
+ Typically, if you try to delete a Github repository, you will probably have a User Experience that match the top of the pyramid, because you risk to loose data in a irreversible way.
 
 ## How do rails-y website solves this
 
