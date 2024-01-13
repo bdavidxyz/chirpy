@@ -1,7 +1,7 @@
 ---
 title: Ruby-on-Rails ERB vs HAML
 author: david
-date: 2024-01-01 11:33:00 +0800
+date: 2024-01-25 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false

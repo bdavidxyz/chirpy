@@ -33,6 +33,7 @@ Without helpers, you would have to take care about :
 
 **Side note** : A lot of criticism against Rails is that the tool pushes abstractions too far, which I somehow agree. How much abstraction is "good enough" for you is entirely up to you (or your tech lead).
 
+
 ## A Rails tutorial from scratch
 
 So let's start a tutorial from scratch. 
