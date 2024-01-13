@@ -679,12 +679,14 @@ $sidebar-display: 'sidebar-display';
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
 
-#sidebar {
-
+.post #sidebar {
   // skip_sidebar hack
   @media all and (min-width: 849px) {
     display: none !important;
   }
+}
+
+#sidebar {
 
   @include pl-pr(0);
 
