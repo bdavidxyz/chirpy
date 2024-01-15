@@ -56,7 +56,7 @@ bundle install
 bundle exec rails new . --force
 ```
 
-Notice here that I don't use the `--minimal` flag - see [options here](https://www.bootrails.com/blog/rails-new-options/). It would remove Hotwire, Stimulus, and so on - the collaboration between the browser and the server **would be then different**. I want to stick to plain old Rails in this tutorial.
+Notice here that I don't use the `--minimal` flag - see [options here](https://bootrails.com/blog/rails-new-options/). It would remove Hotwire, Stimulus, and so on - the collaboration between the browser and the server **would be then different**. I want to stick to plain old Rails in this tutorial.
 
 ## Create a data layer
 

@@ -15,7 +15,7 @@ image:
 
 ## Rails and AlpineJS : wedding time
 
-Have a sneak peak to the official <a href="https://alpinejs.dev/" target="_blank">AlpineJS documentation</a> . AlpineJS is here to augment _in the browser_ behaviours of HTML that is already rendered by the server. Like jQuery did. Like [Hotwire for Rails](https://www.bootrails.com/blog/rails-7-hotwire-a-tutorial/) does nowadays. So you can consider AlpineJS as a viable alternative to jQuery or Hotwire. Some Rails developers loves Alpine, they sometime call it "the Tailwind-like JS framework", since it has a very readable, declarative approach.
+Have a sneak peak to the official <a href="https://alpinejs.dev/" target="_blank">AlpineJS documentation</a> . AlpineJS is here to augment _in the browser_ behaviours of HTML that is already rendered by the server. Like jQuery did. Like [Hotwire for Rails](https://bootrails.com/blog/rails-7-hotwire-a-tutorial/) does nowadays. So you can consider AlpineJS as a viable alternative to jQuery or Hotwire. Some Rails developers loves Alpine, they sometime call it "the Tailwind-like JS framework", since it has a very readable, declarative approach.
 
 ## Create a fresh new Rails app 
 
@@ -146,7 +146,7 @@ If you are not comfortable with any JS UI library, you can go to the getting sta
 
 ## AlpineJS vs Hotwire : centralized state
 
-As we said earlier, AlpineJS could be seen as a replacement of Hotwire, more precisely as a replacement of the [StimulusJS part](https://www.bootrails.com/blog/rails-7-hotwire-a-tutorial/#stimulus).
+As we said earlier, AlpineJS could be seen as a replacement of Hotwire, more precisely as a replacement of the [StimulusJS part](https://bootrails.com/blog/rails-7-hotwire-a-tutorial/#stimulus).
 
 A noticeable difference is the use of the centralized state. In Redux, the centralized state is the "single source of source", which is actually the model that each view (or each small components of the view) should refer to display something.
 

@@ -16,7 +16,7 @@ image:
 ## What is the group_by method in Ruby?
 
 The `.group_by` method is included in Ruby's <a href="https://ruby-doc.org/core-3.1.2/Enumerable.html" target="_blank">Enumerable module</a>. 
-We have already written about the [Enumerable module](https://www.bootrails.com/blog/ruby-enumerable-module/) and [Enumerators](https://www.bootrails.com/blog/ruby-enumerator-what-why-how/) in previous blog entries. 
+We have already written about the [Enumerable module](https://bootrails.com/blog/ruby-enumerable-module/) and [Enumerators](https://bootrails.com/blog/ruby-enumerator-what-why-how/) in previous blog entries. 
 This is because of the importance of these concepts, as they are key to interacting with data: iterating through collections of elements, searching, fetching and sorting, among other features.
 
 ## group_by: The definition
@@ -34,7 +34,7 @@ Here, being the block: `{|element|...}`.
 - When using group_by with a block, the result is a **hash**. The hash is built of keys and values:
 1. **Keys**: Are returned values of the block
 2. **Values**: In the form of an **array**, which represents the matching elements of the collection for each key
-- When using group_by without a block, the result is an [Enumerator](https://www.bootrails.com/blog/ruby-enumerator-what-why-how/#:~:text=Copy-,Enumerator,-%3A%20A%20class%20that).
+- When using group_by without a block, the result is an [Enumerator](https://bootrails.com/blog/ruby-enumerator-what-why-how/#:~:text=Copy-,Enumerator,-%3A%20A%20class%20that).
 
 In other words, when using this method we always need a **collection of objects** (data) and a **grouping rule** (block).
 
@@ -137,7 +137,7 @@ p last_connection
 }
 ```
 
-Now we can [loop through the inactive users](https://www.bootrails.com/blog/ruby-loops-overview/) and fetch the last connection date and time stamps for each inactive user (user id):
+Now we can [loop through the inactive users](https://bootrails.com/blog/ruby-loops-overview/) and fetch the last connection date and time stamps for each inactive user (user id):
 
 ```ruby
 inactive_last_connection = []

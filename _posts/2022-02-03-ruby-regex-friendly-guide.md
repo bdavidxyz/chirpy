@@ -13,7 +13,7 @@ image:
   alt: Ruby regex, a friendly guide
 ---
 
-In this guide, we are going to learn all about Ruby Regex. They are actually called Ruby Regular Expressions, and they should not be confused with [Pattern Matching](https://www.bootrails.com/blog/ruby-pattern-matching/). If we just think generally, the regular expressions are used to define a search pattern. They are just a small sequence of characters. You use them to match or find a specific piece of string for processing and extracting data by defining search patterns. However there's a small difference with pattern matching. Let's learn everything about them in this guide.
+In this guide, we are going to learn all about Ruby Regex. They are actually called Ruby Regular Expressions, and they should not be confused with [Pattern Matching](https://bootrails.com/blog/ruby-pattern-matching/). If we just think generally, the regular expressions are used to define a search pattern. They are just a small sequence of characters. You use them to match or find a specific piece of string for processing and extracting data by defining search patterns. However there's a small difference with pattern matching. Let's learn everything about them in this guide.
 
 ## Ruby Regular Expressions
 

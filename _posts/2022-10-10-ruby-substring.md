@@ -113,7 +113,7 @@ Remember that the last position of a character/element is always -1. And, in ord
 
 ## Before or after a specific character
 
-Finally, and following this methodology, we might want to build a subset according to one or more specific character or set of characters. This is a little bit more complex, but the idea is to create an array of characters and then, [loop through the elements](https://www.bootrails.com/blog/ruby-loops-overview/) to obtain the index position of the specific pattern.
+Finally, and following this methodology, we might want to build a subset according to one or more specific character or set of characters. This is a little bit more complex, but the idea is to create an array of characters and then, [loop through the elements](https://bootrails.com/blog/ruby-loops-overview/) to obtain the index position of the specific pattern.
 
 ```ruby
 string = 'Hello, world!'
@@ -149,7 +149,7 @@ The above logic is easy to understand and makes sense when building simple colle
 
 Regular expressions are a sequence of characters that follow a specific set of rules (language) which enable us to define and search for patterns within strings.
 
-[There is a whole article about RegEx here](https://www.bootrails.com/blog/ruby-regex-friendly-guide/), but let's see an example using the method `match`:
+[There is a whole article about RegEx here](https://bootrails.com/blog/ruby-regex-friendly-guide/), but let's see an example using the method `match`:
 
 ```ruby
 string = "This is the title and this is the body of the document."

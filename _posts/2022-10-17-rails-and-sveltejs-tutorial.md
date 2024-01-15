@@ -54,7 +54,7 @@ Moreover, Svelte is easy to implement and integrate with Ruby-on-Rails. We will 
 
 ## Ruby-on-Rails application from scratch
 
-In other articles we have seen [how to create a fresh new Rails application](https://www.bootrails.com/blog/rails-new-options/). However, we are going to review the process in order to get a clear idea of how to integrate Svelte into the application.
+In other articles we have seen [how to create a fresh new Rails application](https://bootrails.com/blog/rails-new-options/). However, we are going to review the process in order to get a clear idea of how to integrate Svelte into the application.
 
 Remember that you should have an updated version of Rails and Ruby, as well as the **npm package**. Also, it is important to install/upgrade the **yarn package manager** by running:
 
@@ -135,7 +135,7 @@ Good job! We have created our new Rails app with Svelte. Before rendering the ap
 </html>
 ```
 
-Once this is done, we can start shaping our app by defining its [MVC Architecture](https://www.bootrails.com/blog/ruby-on-rails-mvc/). Let's create a controller by running:
+Once this is done, we can start shaping our app by defining its [MVC Architecture](https://bootrails.com/blog/ruby-on-rails-mvc/). Let's create a controller by running:
 
 ```
 rails generate controller demo index
@@ -244,4 +244,4 @@ After seeing how Svelte works and how to implement it together with Ruby-on-Rail
 - Big companies are using Svelte already (i.e. Philips and Rakuten)
 - When talking about frameworks, early adoption can be a risk but also a huge win!
 
-When choosing frameworks, it is important to study and assess alternatives (i.e. [take a look at this guide about Vue](https://www.bootrails.com/blog/ruby-on-rails-and-vuejs-tutorial/) and compare): how does the implementation work? What is more efficient? What pays off in the short/long term?
+When choosing frameworks, it is important to study and assess alternatives (i.e. [take a look at this guide about Vue](https://bootrails.com/blog/ruby-on-rails-and-vuejs-tutorial/) and compare): how does the implementation work? What is more efficient? What pays off in the short/long term?

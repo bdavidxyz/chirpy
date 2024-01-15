@@ -44,7 +44,7 @@ In order to structure our exception-handling system, in Ruby we can group except
 
 On one hand, **validation exceptions** pop up when the user input is not supported by the application. Basically, we can identify:
 - _Required_ field errors due to missing inputs, files, etc.
-- Unique field errors due to type and format mismatches, such as [empty values](https://www.bootrails.com/blog/ruby-nil-vs-blank-vs-empty-vs-presence/).
+- Unique field errors due to type and format mismatches, such as [empty values](https://bootrails.com/blog/ruby-nil-vs-blank-vs-empty-vs-presence/).
 
 On the other hand, **response exceptions** are due to problems when calling an API via request, such as:
 - Badrequest
@@ -179,7 +179,7 @@ p ages
 ## Conclusion
 
 1. Exceptions keep your code clean and make it more readable, making it easier to understand.
-2. Code maintainability becomes easier, as it is more simple to [debug](https://www.bootrails.com/blog/rails-debug-with-ruby-debug/).
+2. Code maintainability becomes easier, as it is more simple to [debug](https://bootrails.com/blog/rails-debug-with-ruby-debug/).
 3. It makes your application more flexible and extensible.
 
-All of the above will help you [create Rails applications](https://www.bootrails.com/blog/how-to-create-tons-rails-applications/) that are efficient by fostering object-oriented programming standards and best practices.
+All of the above will help you [create Rails applications](https://bootrails.com/blog/how-to-create-tons-rails-applications/) that are efficient by fostering object-oriented programming standards and best practices.

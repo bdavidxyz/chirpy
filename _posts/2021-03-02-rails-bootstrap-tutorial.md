@@ -15,7 +15,7 @@ image:
 
 ## December 2021 update : Rails 7 and Bootstrap 5
 
-There is a new article about Rails 7 and Bootstrap 5 : [https://www.bootrails.com/blog/rails-7-bootstrap-5-tutorial/](https://www.bootrails.com/blog/rails-7-bootstrap-5-tutorial/)
+There is a new article about Rails 7 and Bootstrap 5 : [https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/](https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/)
 
 The article below is about Rails 6, Webpacker, and Bootstrap 5.
   

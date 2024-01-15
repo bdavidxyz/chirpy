@@ -49,7 +49,7 @@ All of this results in code that's quick to write, easy to maintain, and scales 
 
 ## Tailwind CSS vs Bootstrap 5
 
-Tailwind CSS is currently the most popular utility-first CSS framework, while Bootstrap 5 is the most popular UI kit (a collection of pre-built components and resources). We already have a tutorial about [Rails and Bootstrap](https://www.bootrails.com/blog/rails-7-bootstrap-5-tutorial/), and we also discussed about [Tailwind vs Bootstrap for a Rails app](https://www.bootrails.com/blog/tailwind-vs-bootstrap/). Our choice so far is to stick with Bootstrap, as long as you can purge the CSS at the end of the journey.
+Tailwind CSS is currently the most popular utility-first CSS framework, while Bootstrap 5 is the most popular UI kit (a collection of pre-built components and resources). We already have a tutorial about [Rails and Bootstrap](https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/), and we also discussed about [Tailwind vs Bootstrap for a Rails app](https://bootrails.com/blog/tailwind-vs-bootstrap/). Our choice so far is to stick with Bootstrap, as long as you can purge the CSS at the end of the journey.
 
 ### What does Tailwind CSS do better than Bootstrap 5?
 

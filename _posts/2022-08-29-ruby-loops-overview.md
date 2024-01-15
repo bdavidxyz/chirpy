@@ -87,7 +87,7 @@ end
 #=> ...  
 ```  
   
-Remember that in this example we are using arrays, but you can also [loop through hash](https://www.bootrails.com/blog/how-to-define-and-use-a-ruby-hash/#:~:text=Copy-,Iterate,-The%20most%20common) or any other object.  
+Remember that in this example we are using arrays, but you can also [loop through hash](https://bootrails.com/blog/how-to-define-and-use-a-ruby-hash/#:~:text=Copy-,Iterate,-The%20most%20common) or any other object.  
   
 If preferred, and if we want to keep track of the index position of the element, we can also use `each_with_index`:  
   
@@ -100,7 +100,7 @@ end
 #=> ...  
 ```  
   
-Very similar is the `map` method; and it also allows [looping with index](https://www.bootrails.com/blog/ruby-map-with-index/).  
+Very similar is the `map` method; and it also allows [looping with index](https://bootrails.com/blog/ruby-map-with-index/).  
   
 ### each_with_object  
   

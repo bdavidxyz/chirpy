@@ -40,7 +40,7 @@ bundle install
 bundle exec rails new . --force --minimal
 ```
 
-**Side note** Notice I  use here the `--minimal` flag - see [options here](https://www.bootrails.com/blog/rails-new-options/). We don't need advanced options of Ruby-on-Rails to show and solve the problem, so let's take the simplest way.
+**Side note** Notice I  use here the `--minimal` flag - see [options here](https://bootrails.com/blog/rails-new-options/). We don't need advanced options of Ruby-on-Rails to show and solve the problem, so let's take the simplest way.
 
 ## Create models
 

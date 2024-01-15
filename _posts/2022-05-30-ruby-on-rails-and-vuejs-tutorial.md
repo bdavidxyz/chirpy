@@ -19,7 +19,7 @@ Ruby-on-Rails minimalistic, default app starts without VueJS. Even JavaScript is
   
 This is where VueJS could enter the Ruby-on-Rails world. But nowadays there's Hotwire, in order to limit the need for a JS framework.  
   
-We even have a [tutorial about Hotwire](https://www.bootrails.com/blog/rails-7-hotwire-a-tutorial/) if you're interested.  
+We even have a [tutorial about Hotwire](https://bootrails.com/blog/rails-7-hotwire-a-tutorial/) if you're interested.  
   
 However if you feel more comfortable with VueJS, there's a ton of places for such tooling, even without SPA.  
   
@@ -96,7 +96,7 @@ bundle exec vite install
   
 ```  
   
-If you want to see what's going on under the hood : we wrote a [tutorial about Rails and Vite](https://www.bootrails.com/blog/vitejs-rails-a-wonderful-combination/).  
+If you want to see what's going on under the hood : we wrote a [tutorial about Rails and Vite](https://bootrails.com/blog/vitejs-rails-a-wonderful-combination/).  
   
 ## 4. Launch Rails app without VueJS  
   

@@ -36,7 +36,7 @@ $> foreman -v
 
 ## Create  a minimalistic, empty Rails app
 
-By default, a Rails application already embeds Action Mailer, but for this tutorial, this is something we precisely want to build without help. Rails offers a `--minimal` option that allows the developer to get the bare minimum files for a Rails app, see this article : [https://www.bootrails.com/blog/rails-new-options/](https://www.bootrails.com/blog/rails-new-options/)
+By default, a Rails application already embeds Action Mailer, but for this tutorial, this is something we precisely want to build without help. Rails offers a `--minimal` option that allows the developer to get the bare minimum files for a Rails app, see this article : [https://bootrails.com/blog/rails-new-options/](https://bootrails.com/blog/rails-new-options/)
 
 Also by default, Rails offers no route, no view, no controller, so here are the commands to create a `--minimal` Rails app with at least one welcome page that works :
 
@@ -227,7 +227,7 @@ end
 **Side notes** : 
 
  - Here we use OpenStruct to mimic a Ruby Object
- - `deliver_later` allows us to send email in the background, in development or test mode, email will be send immediately, but we need a 3rd party tool like Sidekiq to take care of background jobs in production, see this article : [https://www.bootrails.com/blog/rails-sidekiq-tutorial/](https://www.bootrails.com/blog/rails-sidekiq-tutorial/)
+ - `deliver_later` allows us to send email in the background, in development or test mode, email will be send immediately, but we need a 3rd party tool like Sidekiq to take care of background jobs in production, see this article : [https://bootrails.com/blog/rails-sidekiq-tutorial/](https://bootrails.com/blog/rails-sidekiq-tutorial/)
 
 Now build the views
 

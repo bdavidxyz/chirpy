@@ -23,7 +23,7 @@ The syntax of the ternary operator is easy, and as its name reveals, is structur
 
 This means the operator first evaluates a condition and then executes, depending on the result of the condition, the "truthy" or the "falsey" statement.
 
-To understand the logic of it, take the example of [checking emptiness](https://www.bootrails.com/blog/ruby-nil-vs-blank-vs-empty-vs-presence/):
+To understand the logic of it, take the example of [checking emptiness](https://bootrails.com/blog/ruby-nil-vs-blank-vs-empty-vs-presence/):
 
 ```ruby
 x = []

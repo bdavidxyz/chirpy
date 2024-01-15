@@ -15,7 +15,7 @@ image:
 
 ## Nature of arrays
 
-As we have seen in other blog entries, [arrays and hashes are basic concepts in any programming language](https://www.bootrails.com/blog/how-to-define-and-use-a-ruby-hash/). It is the best way to encapsulate and organize data. Arrays, specifically, are containers of a list of elements that can be of any nature (strings, arrays, hashes, integers, booleans, etc.).
+As we have seen in other blog entries, [arrays and hashes are basic concepts in any programming language](https://bootrails.com/blog/how-to-define-and-use-a-ruby-hash/). It is the best way to encapsulate and organize data. Arrays, specifically, are containers of a list of elements that can be of any nature (strings, arrays, hashes, integers, booleans, etc.).
 
 ```ruby
 my_array = ['a', false, 'z', 'l', 0, -99, 9.8, nil]
@@ -66,7 +66,7 @@ p original_array
 
 ## Method: sort_by
 
-This method allows you to sort the data of an array according to specific requirements. We have seen [similar behaviour in the group_by method article](https://www.bootrails.com/blog/ruby-group-by-or-rails-group-by/). The condition to sort the array is passed as a block to the method as per below:
+This method allows you to sort the data of an array according to specific requirements. We have seen [similar behaviour in the group_by method article](https://bootrails.com/blog/ruby-group-by-or-rails-group-by/). The condition to sort the array is passed as a block to the method as per below:
 
 ```ruby
 fruits = ["strawberry", "banana", "orange", "apple", "melon"]

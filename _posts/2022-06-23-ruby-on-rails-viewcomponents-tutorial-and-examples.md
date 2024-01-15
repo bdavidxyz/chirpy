@@ -25,7 +25,7 @@ A ViewComponent is simply a Ruby object and a template. There are five main reas
 
 ViewComponents are ideal for templates that are constantly reused or would benefit from being tested directly. If you have partials or templates with significant amounts of embedded Ruby, they would probably make good ViewComponents.
 
-A typical use case is the navigation bar, for example in a [Bootstrap and Rails app](https://www.bootrails.com/blog/rails-7-bootstrap-5-tutorial/).
+A typical use case is the navigation bar, for example in a [Bootstrap and Rails app](https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/).
 
 Now that you know what ViewComponents are and why you should use them, it's time to implement it yourself!
 

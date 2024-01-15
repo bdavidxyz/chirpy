@@ -24,7 +24,7 @@ Many will think that the **link_to helper** works exactly as the **href** when u
 <a href="<%= user_path(@user) %>">My user</a>
 ```
 
-As you might already know, the redirection features are included in the view pages of an application, [Model-View-Controller architecture](https://www.bootrails.com/blog/ruby-on-rails-mvc/), and rely on the defined **routes** in the routes file (in the config folder). The routes of an application generate different paths that accept instance arguments and translate into URLs to redirect the user. Remember that you can always check the available routes of your application running the command `rake routes` in the console.
+As you might already know, the redirection features are included in the view pages of an application, [Model-View-Controller architecture](https://bootrails.com/blog/ruby-on-rails-mvc/), and rely on the defined **routes** in the routes file (in the config folder). The routes of an application generate different paths that accept instance arguments and translate into URLs to redirect the user. Remember that you can always check the available routes of your application running the command `rake routes` in the console.
 
 
 ## The link_to syntax
@@ -121,7 +121,7 @@ Adding style to links with link_to is done through **classes** that are included
 
 After defining the class or classes in the view, you only need to apply the desired style in the corresponding **css file**.
 
-Remember that it is also possible to apply style using [Bootstrap](https://www.bootrails.com/blog/rails-bootstrap-tutorial/) in the desired classes.
+Remember that it is also possible to apply style using [Bootstrap](https://bootrails.com/blog/rails-bootstrap-tutorial/) in the desired classes.
 
 ## Conclusion
 

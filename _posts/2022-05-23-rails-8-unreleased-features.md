@@ -26,9 +26,9 @@ We could be wrong of course, but at one point, we think that the second option s
   
 ## Rails 8 : Active Authentication  
   
-Maybe it should be the first paragraph, because it's probably one of most missing features amongst Rails devs. That's also true for our product (see the page [why it's time for better defaults](https://www.bootrails.com/why/#time-for-better-defaults), first bullet point). We can notice that most Rails projects use Devise, but this gem requires heavy hacks for corner cases. Which creates frustration. Moreover, authentication is always here, in any Rails app - I've never met any Rails app without it, so far. So making authentication here by default makes a lot of sense.  
+Maybe it should be the first paragraph, because it's probably one of most missing features amongst Rails devs. That's also true for our product (see the page [why it's time for better defaults](https://bootrails.com/why/#time-for-better-defaults), first bullet point). We can notice that most Rails projects use Devise, but this gem requires heavy hacks for corner cases. Which creates frustration. Moreover, authentication is always here, in any Rails app - I've never met any Rails app without it, so far. So making authentication here by default makes a lot of sense.  
   
-**Hint** : Here at BootrAils we use what we consider the closest "default gem" for authentication : Rodauth. Here is a tutorial about [how to authenticate with Rodauth from scratch](https://www.bootrails.com/blog/rails-authentication-with-rodauth-an-elegant-gem/).  
+**Hint** : Here at BootrAils we use what we consider the closest "default gem" for authentication : Rodauth. Here is a tutorial about [how to authenticate with Rodauth from scratch](https://bootrails.com/blog/rails-authentication-with-rodauth-an-elegant-gem/).  
   
 ## Rails 8 : another front-end manager ?  
   
@@ -40,11 +40,11 @@ The problem is, it is still two different tools for CSS and JS, and these two co
   
 As we said earlier, maybe it's time to rely on existing tools. Finally Sprockets wasn't widely used, and Webpack(er) was somehow complicated. However, the need for bundling is so high in the industry that _probably a better standard should exist somewhere_.  
   
-At bootrAils we found that ViteJS was this tool (we wrote an entire article about [ViteJS and Rails](https://www.bootrails.com/blog/vitejs-rails-a-wonderful-combination/)), but it could be even better if there were a way to ask the community what do they prefer.  
+At bootrAils we found that ViteJS was this tool (we wrote an entire article about [ViteJS and Rails](https://bootrails.com/blog/vitejs-rails-a-wonderful-combination/)), but it could be even better if there were a way to ask the community what do they prefer.  
   
 ## Change scaffolding, and align with Hotwire  
   
-Scaffolding is the ability for a Ruby-on-Rails app to generate [Models, Views and Controller](https://www.bootrails.com/blog/ruby-on-rails-mvc/) automagically. The user enters only the type of each field of a model, then migration file, models, controllers, views, unit tests are generated.  
+Scaffolding is the ability for a Ruby-on-Rails app to generate [Models, Views and Controller](https://bootrails.com/blog/ruby-on-rails-mvc/) automagically. The user enters only the type of each field of a model, then migration file, models, controllers, views, unit tests are generated.  
   
 Since Hotwire is now in the place by default, these generators should be more aware of how Hotwire works. There is an attempt to glue Hotwire and scaffolding, in this <a href="https://github.com/jasonfb/hot-glue" target="_blank">Github repository named hot glue</a>, but this is not part of the official Rails project, as far as we know.  
   
@@ -78,7 +78,7 @@ No matter which version of Rails we use, _we always need hot-reloading to work_.
   
 If you code with NextJS or EmberJS (or any JS framework actually), you never hit the F5 key to reload the browser every time you modify a (front-end related) file. It seems quite obvious nowadays, and making it work with _esbuild_ or _guard_ is still very tricky.  
   
-**Side note** : This is something that works really well, if you use [ViteJS with Rails](https://www.bootrails.com/blog/vitejs-rails-a-wonderful-combination/).  
+**Side note** : This is something that works really well, if you use [ViteJS with Rails](https://bootrails.com/blog/vitejs-rails-a-wonderful-combination/).  
   
   
 ## Conclusion  

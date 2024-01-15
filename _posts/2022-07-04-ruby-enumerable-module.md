@@ -48,7 +48,7 @@ Data collections in Ruby (enumerators) allow both, external and internal iterati
 
 ## How to implement the enumerable module
 
-Implementing and using the enumerable module is very easy, specially since it is included in the main Ruby classes (array, [hash](https://www.bootrails.com/blog/how-to-define-and-use-a-ruby-hash/), range, dir), gems (i.e. devise) and projects (Ruby on Rails).
+Implementing and using the enumerable module is very easy, specially since it is included in the main Ruby classes (array, [hash](https://bootrails.com/blog/how-to-define-and-use-a-ruby-hash/), range, dir), gems (i.e. devise) and projects (Ruby on Rails).
   
 However, if you have to manually include the module in a class you can `include Enumerable` following the <a  href="https://ruby-doc.org/core-3.1.2/Enumerable.html#:~:text=element%2C%20cycling%20repeatedly.-,Usage,-%C2%B6%20%E2%86%91"  target="_blank"  >Ruby Documentation</a> guidelines.
 
@@ -166,7 +166,7 @@ Last but not least, we have additional methods of different nature in this modul
 #=> [2, 3, 4]
 ```
 
--  `map_with_index`: [An alternative to the map method worth taking a look at!](https://www.bootrails.com/blog/ruby-map-with-index/)
+-  `map_with_index`: [An alternative to the map method worth taking a look at!](https://bootrails.com/blog/ruby-map-with-index/)
 
 -  `filter_map`: Works like the map method but returns a collection of the elements that validate to truth given a filtering condition.
 

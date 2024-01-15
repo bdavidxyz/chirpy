@@ -117,6 +117,6 @@ And **voilà** ! A new Rails application up and running, no need to create the d
 
 ## 5. All available options
 
-If you need to know all the options when creating a new Rails application, see [https://www.bootrails.com/blog/rails-new-options/](https://www.bootrails.com/blog/rails-new-options/)
+If you need to know all the options when creating a new Rails application, see [https://bootrails.com/blog/rails-new-options/](https://bootrails.com/blog/rails-new-options/)
 
 Enjoy !

@@ -16,7 +16,7 @@ image:
 <span> 2023 disclaimer : Bootrails is now a partner of AvoHQ. <a href="/pricing"><strong>Learn more</strong></a></span>
 ## Avo Overview
 
-<a href="https://avohq.io/" target="_blank">AvoHQ</a> main promise is to remove boilerplate. It's an alternative to the [Rails administrate gem](https://www.bootrails.com/blog/rails-administrate-tutorial-and-philosophy/).
+<a href="https://avohq.io/" target="_blank">AvoHQ</a> main promise is to remove boilerplate. It's an alternative to the [Rails administrate gem](https://bootrails.com/blog/rails-administrate-tutorial-and-philosophy/).
 
 Avo's primary purpose is to manage database records for Rails applications. To do this, it uses the concept of a **resource** that corresponds to a model. Once a resource is defined, the user can map the database fields so Avo knows what data to display and how to do so. In Rails, index is for showing all instances of a resource, show is for showing a single specific instance, and edit/create are to edit and create a single instance specifically. So each field declaration in Avo adds a column of data to the Index view and a row to the Show, Edit, and Create views. Amazingly, Avo doesn't support just basic fields; they handle complex ones like trix, markdown, gravatar, boolean_group, file, etc. Once these resources have been setup with the desired fields, they can be filtered based on conditions through the use of Avo **filters**. it's as simple as generating the filter, setting up options, then adding it to one or more resources. Avo also has something called **actions** that can do things like apply transformations to resources. All in all, it's a pretty powerful and convenient tool. Please note that it's not free for advanced features.
 

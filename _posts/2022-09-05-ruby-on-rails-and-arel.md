@@ -15,7 +15,7 @@ image:
 
 ## Rails: Applications, databases and the Active Record
 
-Ruby on Rails is a powerful framework to create applications based on the [MVC Architecture](https://www.bootrails.com/blog/ruby-on-rails-mvc/). One of its most valuable assets is that you can build solid and reliable relational databases. This is thanks to the **Active Record**, which stores the database and enables interaction: getting, updating, creating and deleting data.
+Ruby on Rails is a powerful framework to create applications based on the [MVC Architecture](https://bootrails.com/blog/ruby-on-rails-mvc/). One of its most valuable assets is that you can build solid and reliable relational databases. This is thanks to the **Active Record**, which stores the database and enables interaction: getting, updating, creating and deleting data.
 
 The data or the information behind an application is what makes it interesting to users; an application with no data is of no value. In this sense, the characteristics of a relational database are:
 
@@ -137,4 +137,4 @@ As we have seen in this article, there are several ways to interact with the inf
 
 The main benefits of using Arel are that it is easy to read and to reuse by encapsulating queries or parts of queries in methods. Moreover, you can mix Arel with plain Active Record to create queries that are even more straightforward.
 
-Note that Arel is a relatively new library and might be subject to modifications in the future. This makes some developers reticent to using Arel, but at the end, it is part of the Rails project journey and who knows [what the next version of Rails could include](https://www.bootrails.com/blog/rails-8-unreleased-features/).
+Note that Arel is a relatively new library and might be subject to modifications in the future. This makes some developers reticent to using Arel, but at the end, it is part of the Rails project journey and who knows [what the next version of Rails could include](https://bootrails.com/blog/rails-8-unreleased-features/).

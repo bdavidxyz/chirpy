@@ -157,8 +157,8 @@ And the same works for nested hashes: `forecast[:weather][:status] #=> ["cloudy"
     #=> "age is the key and 34 is the value."
     ```
 
-**Side note** A well-known method in functional programming is `map`, here is a tutorial that shows [how to map with index](https://www.bootrails.com/blog/ruby-map-with-index/) on arrays, you can try to "map with index" on a hash as an exercise.
+**Side note** A well-known method in functional programming is `map`, here is a tutorial that shows [how to map with index](https://bootrails.com/blog/ruby-map-with-index/) on arrays, you can try to "map with index" on a hash as an exercise.
 
 ##  Conclusion
 
-Hashes are used a lot in Ruby and in Rails applications that use the  [MVC pattern](https://www.bootrails.com/blog/ruby-on-rails-mvc/). That is why it is worth taking a deep dive on how hashes work and how to make the most of them.
+Hashes are used a lot in Ruby and in Rails applications that use the  [MVC pattern](https://bootrails.com/blog/ruby-on-rails-mvc/). That is why it is worth taking a deep dive on how hashes work and how to make the most of them.

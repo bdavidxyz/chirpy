@@ -21,7 +21,7 @@ current_time.strftime('%H:%M:%S.%L')
 # => "10:52:07.119"
 ```
 
-If you want more info about `strftime`, please read this article : [https://www.bootrails.com/blog/ruby-strftime-short-and-long-story/](https://www.bootrails.com/blog/ruby-strftime-short-and-long-story/) - milliseconds, however, were not covered at this time :)
+If you want more info about `strftime`, please read this article : [https://bootrails.com/blog/ruby-strftime-short-and-long-story/](https://bootrails.com/blog/ruby-strftime-short-and-long-story/) - milliseconds, however, were not covered at this time :)
 
 ## 2. Get current time system in milliseconds 
 

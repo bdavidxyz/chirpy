@@ -17,7 +17,7 @@ image:
 
 If you are new to the feature, welcome to the typical "Pattern matching journey"; where first, you don’t know what it is, then, you don’t understand it, and finally, you don’t know how you could work without it.
 
-The pattern matching feature consists in checking data given an expected result or pattern. Some people tend to confuse pattern matching with [Regex (Regular Expression)](https://www.bootrails.com/blog/ruby-regex-friendly-guide/), because this searching tool allows us to find and replace string searchable patterns. Pattern matching is much more than that, we could say it is the evolution of Regex, as it enables us to work with not only string patterns but arrays, hashes,  and any other object.
+The pattern matching feature consists in checking data given an expected result or pattern. Some people tend to confuse pattern matching with [Regex (Regular Expression)](https://bootrails.com/blog/ruby-regex-friendly-guide/), because this searching tool allows us to find and replace string searchable patterns. Pattern matching is much more than that, we could say it is the evolution of Regex, as it enables us to work with not only string patterns but arrays, hashes,  and any other object.
 
 Using pattern matching simplifies the code because its syntax is intuitive and declarative. As you will see, we write the expected outcome instead of having to break down components and creating complex structures, using loops and conditionals such as `if ... elsif ... else`.
 
@@ -36,7 +36,7 @@ case <variable or expression>
 end
 ```
 
-The syntax allows to match both, variables and expressions, towards one or more patterns. Note that after each pattern we could add an if or [unless statement](https://www.bootrails.com/blog/ruby-unless/) to create a guard:
+The syntax allows to match both, variables and expressions, towards one or more patterns. Note that after each pattern we could add an if or [unless statement](https://bootrails.com/blog/ruby-unless/) to create a guard:
 
 ```ruby
 case <variable or expression>
@@ -123,7 +123,7 @@ In this example, the pattern is not matched because when validating, element by 
 
 ## Use cases
 
-Having a clear view of the feature and how it works to validate and match patterns, the questions now are: When to implement it? And, why is it specially useful when building applications based on the [MVC architecture](https://www.bootrails.com/blog/ruby-on-rails-mvc/)?
+Having a clear view of the feature and how it works to validate and match patterns, the questions now are: When to implement it? And, why is it specially useful when building applications based on the [MVC architecture](https://bootrails.com/blog/ruby-on-rails-mvc/)?
 
 1. To create **guards and validations** that are easily understood when reading the code and therefore easy to update.
 2. To handle **Json data**. This is very remarkable because Json files are structured into hashes and the use of patterns rather than conditional functions results in a great minimization of complexity and code.

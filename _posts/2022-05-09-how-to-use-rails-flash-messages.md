@@ -20,7 +20,7 @@ Flash messages are notifications and alerts that pop up in the interface of an a
  - "You are logged in"
  - "Your profile has been updated"
 
-**Side note :** At  [BootrAils](https://www.bootrails.com/) we use flash messages along with the . <a href="https://getbootstrap.com/docs/5.1/components/toasts/" target="_blank">Toasts components of Bootstrap</a>. More about this at the end of the article.
+**Side note :** At  [BootrAils](https://bootrails.com/) we use flash messages along with the . <a href="https://getbootstrap.com/docs/5.1/components/toasts/" target="_blank">Toasts components of Bootstrap</a>. More about this at the end of the article.
 
 ## Why should you use flash messages in your application?
 

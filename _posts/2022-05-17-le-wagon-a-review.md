@@ -43,7 +43,7 @@ The following weeks you will still work following this lecture-exercise structur
   
 And finally, the last weeks are dedicated to developing full projects working in teams and emulating real life development work environments. You should be able to build and pitch two projects, the first being a copy of an existing web interface, such as Airbnb or Netflix, and the second a free project proposed by the team.
 
-**Side note** if you want to know how to start a Rails app from scratch, see [how to use the "rails new" command](https://www.bootrails.com/blog/rails-new-options/).
+**Side note** if you want to know how to start a Rails app from scratch, see [how to use the "rails new" command](https://bootrails.com/blog/rails-new-options/).
   
 ## My personal progress 
   

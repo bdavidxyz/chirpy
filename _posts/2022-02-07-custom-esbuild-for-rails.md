@@ -15,7 +15,7 @@ image:
 
 ## 0. Motivation
 
-At <strong>[BootrAils](https://bootrails.com)</strong> we are currently considering dropping the entire default "Rails Way" to manage frontend assets (CSS, images, JS, etc), by replacing it with ViteJS. (See this article : [https://www.bootrails.com/blog/vitejs-rails-a-wonderful-combination/](https://www.bootrails.com/blog/vitejs-rails-a-wonderful-combination/)).  
+At <strong>[BootrAils](https://bootrails.com)</strong> we are currently considering dropping the entire default "Rails Way" to manage frontend assets (CSS, images, JS, etc), by replacing it with ViteJS. (See this article : [https://bootrails.com/blog/vitejs-rails-a-wonderful-combination/](https://bootrails.com/blog/vitejs-rails-a-wonderful-combination/)).  
   
 However, for those interested in this "Rails Way", here is a trick to allow more esbuild configuration.  
   
@@ -67,7 +67,7 @@ bin/rails db:migrate
 
 **Side note 1** For Rails 7.0.0, if you don't specify any css framework, Rails will **not** give you any jsbundling by default. You will have to rely on Sprockets (for CSS) and importmaps (for JS)
 
-**Side note 2** If you want to create new Rails application more easily, we already wrote an article about this here : [https://www.bootrails.com/blog/how-to-create-tons-rails-applications/](https://www.bootrails.com/blog/how-to-create-tons-rails-applications/)
+**Side note 2** If you want to create new Rails application more easily, we already wrote an article about this here : [https://bootrails.com/blog/how-to-create-tons-rails-applications/](https://bootrails.com/blog/how-to-create-tons-rails-applications/)
 
 ## Check everything is working properly
 

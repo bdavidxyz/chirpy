@@ -64,7 +64,7 @@ Compared to JavaScript, declaring and assigning variables in Ruby looks a little
 
 `var_name = value`
 
-and [hashes](https://www.bootrails.com/blog/how-to-define-and-use-a-ruby-hash/) are defined as hash_name = {key: value, key1: value1} and access key’s value as hash_name[:key]
+and [hashes](https://bootrails.com/blog/how-to-define-and-use-a-ruby-hash/) are defined as hash_name = {key: value, key1: value1} and access key’s value as hash_name[:key]
 
 ```ruby
 cars = { ford: 1, lincoln: 2, cadillac: 3 }
@@ -231,7 +231,7 @@ Speaking of pure functions we mean that these functions satisfy two main conditi
 
 ## First-Class and Higher-Order Functions
 
-A higher-order function can take a function or return one as an argument. Ruby can handle such actions, those higher-order functions need to be [`lambdas` (or `procs`).](https://www.bootrails.com/blog/ruby-block-procs-and-lambda/) 
+A higher-order function can take a function or return one as an argument. Ruby can handle such actions, those higher-order functions need to be [`lambdas` (or `procs`).](https://bootrails.com/blog/ruby-block-procs-and-lambda/) 
 
 ```ruby 
 add = lambda { |x,y| x + y }

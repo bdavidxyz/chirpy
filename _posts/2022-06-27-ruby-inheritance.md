@@ -58,7 +58,7 @@ The first method inside a class is the **initializer** or **constructor**. This 
 
 In this case, the instance is "myCar" and it is a Car object that is a Smart with 2 doors, 4 wheels and a Turbo engine.
 
-The constructor (initializer) is executed automatically when creating the new instance. The so called **attributes** are the data that we pass when calling the method `new` on our class. Note, that to interact with these attributes we need to define getters and setters methods, which of course is much more efficient if we do by using the [attribute reader, writer and accessor](https://www.bootrails.com/blog/ruby-attr-accessor-attr-writer-attr-reader/#:~:text=2.%20attr_reader%2C%20attr_writer%20%26%20attr_accessor).
+The constructor (initializer) is executed automatically when creating the new instance. The so called **attributes** are the data that we pass when calling the method `new` on our class. Note, that to interact with these attributes we need to define getters and setters methods, which of course is much more efficient if we do by using the [attribute reader, writer and accessor](https://bootrails.com/blog/ruby-attr-accessor-attr-writer-attr-reader/#:~:text=2.%20attr_reader%2C%20attr_writer%20%26%20attr_accessor).
 
 After the initializer in our class we will find the set of **methods** that will custom each instance and define its behavior. For example, we can `start` our instance and increase its speed to 50km/h as per below:
 
@@ -120,11 +120,11 @@ end
 
 Note that modules can not be instantiated, which means that we can not create an object from a module by using the <a href="https://ruby-doc.org/core-3.1.2/BasicObject.html#method-c-new" target="_blank" >method new</a> as we can do with classes.
 
-It is important to mention that when working with objects and inheritance it is common to [use the keyword self](https://www.bootrails.com/blog/ruby-self/), in both modules and classes.
+It is important to mention that when working with objects and inheritance it is common to [use the keyword self](https://bootrails.com/blog/ruby-self/), in both modules and classes.
 
 ## How to implement inheritance in your application
 
-We have seen the syntax of class and interface inheritance, now is time to understand where to implement it in an application that follows the [MVC architecture](https://www.bootrails.com/blog/ruby-on-rails-mvc/).
+We have seen the syntax of class and interface inheritance, now is time to understand where to implement it in an application that follows the [MVC architecture](https://bootrails.com/blog/ruby-on-rails-mvc/).
 
 Class inheritance is executed entirely in the models of the application. The path to both, the `Car` and the `ElectricCar` objects, would be:
 

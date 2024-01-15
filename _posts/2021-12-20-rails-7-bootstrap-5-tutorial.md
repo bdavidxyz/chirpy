@@ -15,11 +15,11 @@ image:
 
 ## 0. A big warning  
   
-At <strong>[BootrAils](https://bootrails.com)</strong>, we are very excited that Rails 7 is out since mid-december, 2021. The frontend assets management is once again completely different. Rails 6 almost dropped Sprockets in favor of Webpack  - see [this article](https://www.bootrails.com/blog/webpacker-vs-sprockets/), now Rails 7 almost dropped Webpack in favor of jsbundling-rails (with esbuild) + import maps + Sprockets.  
+At <strong>[BootrAils](https://bootrails.com)</strong>, we are very excited that Rails 7 is out since mid-december, 2021. The frontend assets management is once again completely different. Rails 6 almost dropped Sprockets in favor of Webpack  - see [this article](https://bootrails.com/blog/webpacker-vs-sprockets/), now Rails 7 almost dropped Webpack in favor of jsbundling-rails (with esbuild) + import maps + Sprockets.  
   
 So we, as Rails developers, have choices. For this tutorial, we will use the default Rails 7 options - but we are not sure you should. That's the **fear**. Relief will be for the end of the article.
   
-If you want a full setup of Bootstrap 5 with Webpacker, see [that other article](https://www.bootrails.com/blog/rails-bootstrap-tutorial/).
+If you want a full setup of Bootstrap 5 with Webpacker, see [that other article](https://bootrails.com/blog/rails-bootstrap-tutorial/).
   
 ## 1. Prerequisites  
   
@@ -288,6 +288,6 @@ Now open your browser (not localhost, but the production URL provided by Heroku)
 
 ## A relief, yet to be improved 
 
- The relief is that compared to the previous blog article with the [webpacker settings](https://www.bootrails.com/blog/rails-bootstrap-tutorial/), Bootstrap 5 almost works out-of-the-box with Rails 7. However, the number of tools to achieve the result is not entirely satisfying. We'll give explanations next week :)
+ The relief is that compared to the previous blog article with the [webpacker settings](https://bootrails.com/blog/rails-bootstrap-tutorial/), Bootstrap 5 almost works out-of-the-box with Rails 7. However, the number of tools to achieve the result is not entirely satisfying. We'll give explanations next week :)
   
 Stay tuned !

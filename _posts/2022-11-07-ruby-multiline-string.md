@@ -118,6 +118,6 @@ p string
 
 ## Summary
 
-We have summed up the different ways to create multiline strings with Ruby. Knowing the characteristics of each method, should help you understand when to use each option to write efficient and readable code. Remember to check other entries that will [help you write efficient Ruby code](https://www.bootrails.com/categories/ruby/)!
+We have summed up the different ways to create multiline strings with Ruby. Knowing the characteristics of each method, should help you understand when to use each option to write efficient and readable code. Remember to check other entries that will [help you write efficient Ruby code](https://bootrails.com/categories/ruby/)!
 
 On a final note, keep in mind that [when defining hashes and arrays](https://bootrails.com/blog/how-to-define-and-use-a-ruby-hash/) we can use strings, and that also includes multiline strings!

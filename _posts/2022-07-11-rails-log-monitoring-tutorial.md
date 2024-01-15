@@ -70,7 +70,7 @@ bundle install
 bundle exec rails new . --force -d=postgresql --minimal
 ```
 
-If you want to know more about the last command, you can read this [tutorial about the "rails new" options](https://www.bootrails.com/blog/rails-new-options/)
+If you want to know more about the last command, you can read this [tutorial about the "rails new" options](https://bootrails.com/blog/rails-new-options/)
 
 If you have git installed, maybe it's time here to do a first commit `git add . && git commit -m 'firstcommit'` so that you can track progress.
 

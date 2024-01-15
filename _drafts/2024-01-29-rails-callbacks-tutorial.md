@@ -23,11 +23,11 @@ They can also be described as hooks into an object’s life cycle provided by Ac
 
 ## Active Record operations
 
-[Ruby-on-Rails](https://www.bootrails.com/blog/ruby-on-rails-mvc/) come with many built-in callbacks. The main types are:
+[Ruby-on-Rails](https://bootrails.com/blog/ruby-on-rails-mvc/) come with many built-in callbacks. The main types are:
 
 - Method references (symbol) – recommended
 - Callback objects – recommended
-- Inline methods (using a [proc](https://www.bootrails.com/blog/ruby-block-procs-and-lambda/)) – when appropriate
+- Inline methods (using a [proc](https://bootrails.com/blog/ruby-block-procs-and-lambda/)) – when appropriate
 
 Rails guides contain <a href="https://guides.rubyonrails.org/active_record_callbacks.html" target="_blank">all the available Active Record callbacks</a>. As you can read from the guides, there are also *Running Callbacks*, *Skipping Callbacks*, *Relational Callbacks*, *Conditional Callbacks*, and *Transaction Callbacks*.
 
@@ -361,7 +361,7 @@ Article destroyed
 
 ## Conditional callbacks
 
-We can also make the calling of the callback method dependent on the execution of the given assertion. You can make conditional callbacks using the `:if` and [`:unless`](https://www.bootrails.com/blog/ruby-unless/) parameters, which can take a character, a Proc, or an Array. Use the `:if` option if you want to specify under which conditions the callback should be called. Conversely, you can use the [`:unless`](https://www.bootrails.com/blog/ruby-unless/) parameter if you want to specify conditions under which the callback should not be called.
+We can also make the calling of the callback method dependent on the execution of the given assertion. You can make conditional callbacks using the `:if` and [`:unless`](https://bootrails.com/blog/ruby-unless/) parameters, which can take a character, a Proc, or an Array. Use the `:if` option if you want to specify under which conditions the callback should be called. Conversely, you can use the [`:unless`](https://bootrails.com/blog/ruby-unless/) parameter if you want to specify conditions under which the callback should not be called.
 
 ```ruby
 class Comment < ApplicationRecord
