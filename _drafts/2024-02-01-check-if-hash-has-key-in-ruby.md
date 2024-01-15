@@ -1,7 +1,7 @@
 ---
 title: How to check if hash has key in Ruby
 author: david
-date: 2024-01-18 11:33:00 +0800
+date: 2024-02-01 11:33:00 +0800
 categories: [ruby]
 tags: [ruby]
 pin: false
