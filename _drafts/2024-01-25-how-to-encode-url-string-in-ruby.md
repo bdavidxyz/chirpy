@@ -1,7 +1,7 @@
 ---
 title: How to encode an URL String in Ruby
 author: david
-date: 2024-01-18 11:33:00 +0800
+date: 2024-01-25 11:33:00 +0800
 categories: [ruby]
 tags: [ruby]
 pin: false
