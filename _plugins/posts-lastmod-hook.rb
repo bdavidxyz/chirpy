@@ -1,14 +1,29 @@
 #!/usr/bin/env ruby
 #
-# Check for changed posts
+# Need more robust website_url in many ways, see https://stackoverflow.com/a/69370394/2595513
 
-Jekyll::Hooks.register :posts, :post_init do |post|
+require 'uri'
 
-  commit_num = `git rev-list --count HEAD "#{ post.path }"`
+module Jekyll
+  class WebsiteUrlTag < Liquid::Tag
+    def initialize(tag_name, text, tokens)
+      super
+      @text = text.strip
+      tokens = tokens
+    end
 
-  if commit_num.to_i > 1
-    lastmod_date = `git log -1 --pretty="%ad" --date=iso "#{ post.path }"`
-    post.data['last_modified_at'] = lastmod_date
+    def render(context)
+      site = context.registers[:site]
+
+      uri = URI.parse("#{site.config["url"]}#{site.config["baseurl"]}")
+
+      str_uri_port = uri.port && uri.port != 80 && uri.port != 443 ? ":" + uri.port.to_s : ""
+      websiteurl = uri.host + str_uri_port + uri.path
+      websiteurl.prepend(uri.scheme + '://') if @text != "noprotocol"
+
+      websiteurl.sub(/(\/)+$/,'')
+    end
   end
-
 end
+
+Liquid::Template.register_tag('website_url', Jekyll::WebsiteUrlTag)
