@@ -8,7 +8,7 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: path
+  path: https://res.cloudinary.com/bdavidxyz-com/image/upload/w_1600,h_836,q_100/l_text:Karla_72_bold:How%20to%20find%20an%20element%20inside%20a%20Ruby%20array,co_rgb:ffe4e6,c_fit,w_1400,h_240/fl_layer_apply,g_south_west,x_100,y_180/l_text:Karla_48:A%20simple%20recap,co_rgb:ffe4e680,c_fit,w_1400/fl_layer_apply,g_south_west,x_100,y_100/newblog/globals/bg_me.jpg
   alt: How to find an element inside a Ruby array
 ---
 
@@ -55,6 +55,8 @@ ary.select{|e| e.include?('a')}
 
 Example above emphasises that both are immutable : the `ary` variable didn't change between consecutives calls.
 
+
+
 ## Use the include? method
 
 Remember the `.include?` method about String just above ?
@@ -65,41 +67,60 @@ Well, it also works with an Array :
 ary = ['abc', 'bzz', 'aaa']
 ary.include?('aaa')
 # true
+ary.include?(42)
+# false
 ```
 
-Note that the intent is not the same as the paragraph above, so depending on your context, I will list many possibilities.
+Note that the intent is not the same as the paragraph above, so it just depend on what you're looking for.
 
+## How to find the last element inside a Ruby array
+
+"Last" you said ? Well, use the `.last` method
+
+```ruby
+ary = ['abc', 'bzz', 'aaa']
+ary.last
+# 'aaa'
+```
+
+> You cannot pass a block to the `.last` method (it would be ignored anyway)
+{: .prompt-warning }
 
 ## How to find the first element inside a Ruby array
-
-Now that we have a way to filter element, how to find the nth element inside a Ruby array ? 
 
 Well, if you're just looking for the first element, `.first` is just here
 
 ```ruby
 ary = ['abc', 'bzz', 'aaa']
-ary.first{|e| e.include?('z')}
-'bzz'
+ary.first
+# 'abc'
 ```
 
+> You cannot pass a block to the `.first` method (again)
+{: .prompt-warning }
 
-## How to find the last element inside a Ruby array
 
-Well, nothing fancy here, just use the `.last` method
+If you want to find the first element to match a given condition, use `.find`
+
+## Find first matching element
+
+`.find` allows you to pass a condition, and will return the first element that matches that condition
+
 
 ```ruby
 ary = ['abc', 'bzz', 'aaa']
-ary.last{|e| e.include?('a')}
-'aaa'
+ary.find{|e| e.include?('z')}
+# 'bzz'
 ```
 
-## How to find the nth element inside a Ruby array
+
+## How to find the nth matching element
 
 Something I didn't retrieve trivially is the way to find nth element to match a given condition.
 
-First and last was easy (see above) for this scenario.
+First and last are easy. First match is easy.
 
-But what about the nth one ?
+But what about the nth match ?
 
 ```ruby
 ary = ['abc', 'bzz', 'aaa']
@@ -121,5 +142,28 @@ def nth(array, condition, position)
 end
 ```
 
-# Retrive the index from a given element in Ruby
+## Retrieve the index of a given element inside a Ruby array
 
+Use the index method like this :
+
+```ruby
+ary = ['abc', 'bzz', 'aaa']
+ary.index 'aaa'
+# => 2
+```
+
+Note that parenthesis are optional in Ruby when calling a method.
+
+## Use of find_index in Ruby arrays
+
+`.find_index` will retrieve the first element that matches the given condition :
+
+```ruby
+ary = ['abc', 'bzz', 'aaa']
+ary.find_index{|e| e.include?('z')}
+# => 1
+```
+
+## Summary
+
+I wrote this article because I was wondering how to find the nth element that matches a given condition in a Ruby array. It was a good excuse to sum up how retrieve things inside a Ruby array.
