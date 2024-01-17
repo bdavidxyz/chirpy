@@ -103,7 +103,7 @@ The thing is, no free tool can reach that level of maturity. Even in the gloriou
 
 I don't see it as an obstacle, since it's actually plain old Tailwind, there are no 3rd party dependencies (maybe outside the few JS components, but since they seamlessly integrate with the current Hotwire stack, I don't care much).
 
-Moreover, they have a generous free tier, and they accepted to offer paying components that end up in this starter kit :gift:.
+Moreover, they have a generous free tier, and they accepted to offer paying components that end up in this starter kit 🎁.
 
 So yes, that's it, deep integrated Flowbite and Rails starter kit!
 
