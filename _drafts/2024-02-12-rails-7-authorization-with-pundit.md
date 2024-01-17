@@ -35,7 +35,7 @@ Tools I will use in this tutorial
 
 ```shell
 ruby -v  # 3.3.0
-rails -v  # 7.1.2
+rails -v  # 7.1.3
 bundle -v  # 2.4.10
 node -v # 20.9.0
 git --version # 2.34.1
@@ -49,7 +49,7 @@ So let's start by building an authentication system (no CSS)
 
 
 ```shell
-rails new myapp --minimal
+rails new myapp
 cd myapp 
 bundle add authentication-zero
 bin/rails generate authentication
@@ -75,6 +75,7 @@ Now create the database
   bin/rails db:create
   bin/rails db:migrate
   bin/rails db:seed
+
 ``` 
 
 And launch the server :
@@ -296,7 +297,7 @@ class AdminPolicy < ApplicationPolicy
 end
 ```
 
-## Injecting policies into controller
+## Injecting Pundit policies into controller
 
 So now let's inject our policy into the controller.
 
@@ -322,6 +323,10 @@ How good is that ?
 
 I only scratched the surface of Pundit I admit, but setting everything from scratch was already a long run.
 
-It should be enough for you to understand how things work, maybe simply go to their documentation to see various use cases.
+Pundit deserves another tutorial, but here I hope that now you understand the "what" and the "how" of this framework.
+
+Part 2 will start from here for sure, so stay tune!
+
+David
 
 

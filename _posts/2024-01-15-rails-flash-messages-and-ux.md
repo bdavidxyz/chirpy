@@ -12,8 +12,6 @@ image:
   alt: Rails flash messages and UX
 ---
 
-# Rails flash messages and UX
-
 Flash message is a very old notion of Ruby-on-Rails. This article will be focused on the usability of these messages.
 
 ## Flash is a designer vocabulary
