@@ -84,10 +84,10 @@ So what should a "CSS framework" (or UI Kit) bring on the table?
 - It should be still very active with frequent updates
 - It should give extreme care to accessibility
 - It should provide some dynamic components, at least the big classics like navbars or spinners
-- Reusable blocks like featurettes, footer, testimonials, etc 
-- Prebuild pages like "Home Page" and "Admin Dashboard"
-- A design system that is quite complete, neutral tone, and easy to customise and share with the designer.
-- A large open-source part
+- It should provide reusable blocks like featurettes, footer, testimonials, etc 
+- It should provide prebuild pages like "Home Page" and "Admin Dashboard"
+- Give a design system that is quite complete, neutral tone, and easy to customise and share with the designer
+- Have a large open-source part
 
 Lastly,
 
