@@ -1,5 +1,5 @@
 ---
-title: Rails 7 authorization with Pundit
+title: Authentication vs Authorization with Rails 7
 author: david
 date: 2024-02-12 11:33:00 +0800
 categories: [ruby-on-rails]
@@ -8,11 +8,10 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: https://res.cloudinary.com/bdavidxyz-com/image/upload/w_1600,h_836,q_100/l_text:Karla_72_bold:Rails%207%20authorization%20with%20Pundit,co_rgb:ffe4e6,c_fit,w_1400,h_240/fl_layer_apply,g_south_west,x_100,y_180/l_text:Karla_48:Tutorial%20from%20the%20ground,co_rgb:ffe4e680,c_fit,w_1400/fl_layer_apply,g_south_west,x_100,y_100/newblog/globals/bg_me.jpg
-  alt: Rails 7 authorization with Pundit
+  path: https://res.cloudinary.com/bdavidxyz-com/image/upload/w_1600,h_836,q_100/l_text:Karla_72_bold:Authentication%20vs%20Authorization%20with%20Rails%207,co_rgb:ffe4e6,c_fit,w_1400,h_240/fl_layer_apply,g_south_west,x_100,y_180/l_text:Karla_48:Feat.%20auth-zero%20and%20pundit%20gems,co_rgb:ffe4e680,c_fit,w_1400/fl_layer_apply,g_south_west,x_100,y_100/newblog/globals/bg_me.jpg
+  alt: Authentication vs Authorization with Rails 7
 ---
 
-# Rails 7 authorization with Pundit
 
 Authorization means give or refuse access to the current User to some URLs (or more generally, any kind of resource.)
 
@@ -53,6 +52,7 @@ rails new myapp
 cd myapp 
 bundle add authentication-zero
 bin/rails generate authentication
+
 ```
 
 Great! So now we have a default rails app, augmented with authentication feature.
@@ -86,6 +86,8 @@ And launch the server :
 ```  
 
 Good! Now open localhost:3000 and try to authenticate with the user that is inside seed.rb
+
+Now log out, and stop the local web server.
 
 ## Build 3 different pages
 
@@ -124,12 +126,19 @@ And an admin page like this :
 
 Now apply routes to these new pages :
 
-```bash  
+```ruby  
   # inside config/routes.rb
-  # add these 3 lines
-  get "welcome", to: "welcome#index"
-  get "profile", to: "profile#index"
-  get "admin", to: "admin#index"
+  Rails.application.routes.draw do
+
+    # add these 3 lines
+    get "welcome", to: "welcome#index"
+    get "profile", to: "profile#index"
+    get "admin", to: "admin#index"
+
+    # all other routes remain unchanged
+    # ...
+
+  end
 ``` 
 
 Relaunch your local web server, and try to access to the following URLs:
@@ -214,12 +223,12 @@ end
 Inside db/seeds.rb
 
 ```ruby
-User.create(email: "simple@user.com", password_digest: BCrypt::Password.create("Secret1*3*5*"), verified: true)
+User.create(email: "simple@user.com", role: 'customer', password_digest: BCrypt::Password.create("Secret1*3*5*"), verified: true)
 User.create(email: "customer@user.com", role: 'customer', password_digest: BCrypt::Password.create("Secret1*3*5*"), verified: true)
 User.create(email: "admin@user.com", role: 'admin', password_digest: BCrypt::Password.create("Secret1*3*5*"), verified: true)
 ```
 
-Recreate your database :
+Recreate your database (you won't usually do this once you have a production database, but for a small tutorial, that's ok)
 
 ```bash  
   bin/rails db:drop db:create db:migrate db:seed
@@ -256,11 +265,19 @@ Include Pundit in your application controller:
 
 ```ruby
 class ApplicationController < ActionController::Base
-  include Pundit::Authorization # add this line
+    include Pundit::Authorization # add this line
 
-  def current_user # add this method, required by Pundit
+  # was here before, left as-is
+  before_action :set_current_request_details
+  before_action :authenticate
+
+  # add this method, required by Pundit
+  def current_user 
     Current.user # this belongs to the authentication mechanism, so not Pundit
   end
+
+  # rest of code ...
+
 end
 ```
 
@@ -275,24 +292,18 @@ After that, you need to restart the Rails server. Now Rails can pick up any clas
 ## Adding policies
 
 ```shell
-mkdir app/policies
 touch app/policies/admin_policy.rb
+
 ```
 
-Our `admin_policy.rb` with some code:
+Our `admin_policy.rb` only allows admin to go to the admin dashboard:
 
 ```ruby
 class AdminPolicy < ApplicationPolicy
   attr_reader :user
 
-  def initialize(user)
-    @user = user
-  end
-
   def index?
-    # a condition which returns a boolean value
-    # false by default, unless the user is an admin
-    false unless user.admin?
+    return user.admin?
   end
 end
 ```
@@ -304,28 +315,29 @@ So now let's inject our policy into the controller.
 ```ruby
 class AdminController < ApplicationController
 
-
   def index
-    authorize Current.user # Explicit call, optional because
-  end
-  
+    authorize Current.user, policy_class: AdminPolicy
+  end  
 
 end
 ```
 
-Now relaunch your web server, and try to connect as customer to the admin area.
+Yay! Not too much Rails magic here. We explicitly authorize the current user for a given policy.
 
-Try to connect as admin to the admin area.
+Now relaunch your web server, and try to connect as customer to the admin area. It should raise an error.
+
+Try to connect as admin to the admin area. It should work properly :)
 
 How good is that ?
 
 ## Summary
 
-I only scratched the surface of Pundit I admit, but setting everything from scratch was already a long run.
+We covered 2 major concept of any web app, from scratch :
 
-Pundit deserves another tutorial, but here I hope that now you understand the "what" and the "how" of this framework.
+ - Authentication, with a generator : Rails 8 will work like this, so we relied on a similar gem to achieve it.
+ - Authorization, with a well-known gem, in order to know which user has access to which resource.
 
-Part 2 will start from here for sure, so stay tune!
+Have a good day then :) 
 
 David
 
