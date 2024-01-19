@@ -1,7 +1,7 @@
 ---
 title: Rails callbacks tutorial
 author: david
-date: 2024-01-29 11:33:00 +0800
+date: 2024-02-12 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false
@@ -132,11 +132,9 @@ Here are the tools I used for this tutorial.
   
 ```shell  
 $> ruby --version  
-=> 3.1.2  
-$> rails --version  
-=> 7.0.3.1  
+=> 3.3.0  
 $> node --version  
-=> 18.6.0  
+=> v20.9.0  
 $> yarn --version  
 => 1.22.19  
 ```  
@@ -148,9 +146,9 @@ Create a file named Gemfile in your working directory, and fill it like this:
 ```ruby
 source 'https://rubygems.org'
 
-ruby '3.0.2'
+ruby '3.3.0'
 
-gem 'rails', '~> 7.0.3.1'
+gem 'rails', '7.1.3'
 ```
 
 And then run

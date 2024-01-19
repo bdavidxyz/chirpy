@@ -1,7 +1,7 @@
 ---
 title: Authentication vs Authorization with Rails 7
 author: david
-date: 2024-02-12 11:33:00 +0800
+date: 2024-01-29 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false
@@ -24,7 +24,7 @@ Authentication is the entrance ticket, you can not enter the conference without 
 Authorization is about checking the ticket levels of access : does it allows you to access gate A or snack B?
 
 
-## Authorization with Rails 7
+## Authentication with Rails 7
 
 Now that Rails seems to promote generator for authentication (it will be the case in Rails 8), let's use the closest possibility (right now) : the auth-zero generator. 
 

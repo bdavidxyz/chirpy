@@ -67,7 +67,7 @@ Then let's go at the root of your usual workspace, and start to build a fresh ne
 ```shell
 mkdir pagination && cd pagination  
 echo "source 'https://rubygems.org'" > Gemfile  
-echo "gem 'rails', '7.1.2'" >> Gemfile  
+echo "gem 'rails', '7.1.3'" >> Gemfile  
 bundle install  
 bundle exec rails new . --force
 ```

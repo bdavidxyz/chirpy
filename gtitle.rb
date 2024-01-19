@@ -1,7 +1,18 @@
 require 'uri'
 
 # <a href="foo" target="_blank">foo</a>
-
+# 
+# > An example showing the `tip` type prompt.
+# {: .prompt-tip }
+# 
+# > An example showing the `info` type prompt.
+# {: .prompt-info }
+# 
+# > An example showing the `warning` type prompt.
+# {: .prompt-warning }
+# 
+# > An example showing the `danger` type prompt.
+# {: .prompt-danger }
 def generate_image_url(title, subtitle)
   base_url = "https://res.cloudinary.com/bdavidxyz-com/image/upload"
   image_options = "/w_1600,h_836,q_100"

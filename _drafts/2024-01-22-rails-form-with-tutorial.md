@@ -51,7 +51,7 @@ Then let's go at the root of your usual workspace, and start to build a fresh ne
 ```shell
 mkdir formwith && cd formwith  
 echo "source 'https://rubygems.org'" > Gemfile  
-echo "gem 'rails', '7.1.2'" >> Gemfile  
+echo "gem 'rails', '7.1.3'" >> Gemfile  
 bundle install  
 bundle exec rails new . --force
 ```
@@ -78,7 +78,7 @@ class CreateBooks < ActiveRecord::Migration[7.1]
     create_table :books do |t|
       t.string :title
       t.text :body
-    t.integer :isbn
+      t.integer :isbn
     
       t.timestamps
     end
