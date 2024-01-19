@@ -27,7 +27,7 @@ def generate_image_url(title, subtitle)
 
   final_url = "#{base_url}#{image_options}#{title_text}#{image_apply}#{subtitle_text}#{subtitle_apply}#{background_image}"
 
-  return final_url.gsub('?', '%3F')
+  return final_url.gsub('?', '%3F').gsub(',', '%2C')
 end
 
 # Demander le titre et le sous-titre à l'utilisateur

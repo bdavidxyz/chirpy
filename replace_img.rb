@@ -17,13 +17,13 @@ def replace_img
 
       img_url = generate_image_url(title, subtitle)
       p img_url
-      p '_____________'
 
       # Remplacer la valeur de la propriété "path" par le contenu de "title" suivi de ".jpg"
-      # contenu.gsub!(/(path:)\s*(.+)$/, "\\1 #{title.strip.downcase.gsub(/\s+/, '_')}.jpg")
+      contenu.gsub!(/(path:)\s*(.+)$/, "\\1 #{img_url}")
+      p '_____________'
 
       # Écrire les modifications dans le fichier
-      # File.write(fichier, contenu)
+      File.write(fichier, contenu)
     end
 
   end
@@ -33,8 +33,8 @@ def generate_image_url(title, subtitle)
   base_url = "https://res.cloudinary.com/bdavidxyz-com/image/upload"
   image_options = "/w_1600,h_836,q_100"
 
-  title_text = "/l_text:Karla_72_bold:#{URI::Parser.new.escape(title)},co_rgb:ffe4e6,c_fit,w_1400,h_240"
-  subtitle_text = "/l_text:Karla_48:#{URI::Parser.new.escape(subtitle)},co_rgb:ffe4e680,c_fit,w_1400"
+  title_text = "/l_text:Karla_72_bold:#{URI::Parser.new.escape(title.gsub(',', ' '))},co_rgb:ffe4e6,c_fit,w_1400,h_240"
+  subtitle_text = "/l_text:Karla_48:#{URI::Parser.new.escape(subtitle.gsub(',', ' '))},co_rgb:ffe4e680,c_fit,w_1400"
 
   image_apply = "/fl_layer_apply,g_south_west,x_100,y_180"
   subtitle_apply = "/fl_layer_apply,g_south_west,x_100,y_100"
