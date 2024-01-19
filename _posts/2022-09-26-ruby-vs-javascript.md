@@ -2,8 +2,8 @@
 title: Ruby vs JavaScript
 author: david
 date: 2022-09-26 11:33:00 +0800
-categories: [ruby-on-rails]
-tags: [ruby-on-rails]
+categories: [ruby]
+tags: [ruby]
 pin: false
 math: false
 mermaid: false
