@@ -12,8 +12,6 @@ image:
   alt: Rails form_with tutorial
 ---
 
-# Rails form_with tutorial
-
 "form_with" is known as a form helper, which means it's an abstraction to build well-known, standard HTML form.
 
 ## In the need of form_with

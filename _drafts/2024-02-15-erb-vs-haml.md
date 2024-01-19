@@ -13,8 +13,6 @@ image:
 ---
 
 
-# ERB vs HAML
-
 This is an opinionated article about ERB and HAML with Rails. Let's compare each other and pick a winner.
 
 ## Use case

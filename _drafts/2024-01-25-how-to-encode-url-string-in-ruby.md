@@ -12,8 +12,6 @@ image:
   alt: How to encode an URL String in Ruby
 ---
 
-# How to encode an URL String in Ruby (2024 edition)
-
 ## Short answer, encoding a Ruby String
 
 2024 edition is :

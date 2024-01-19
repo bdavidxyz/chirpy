@@ -12,8 +12,6 @@ image:
   alt: How to check if hash has key in Ruby
 ---
 
-#  Check if hash has key in Ruby
-
 With Ruby, there are some cases where you want to check if a given key is already in the hash.
 
 If you're new to hashes, I wrote a [basic blog article about Ruby hashes](https://bootrails.com/blog/how-to-define-and-use-a-ruby-hash/).

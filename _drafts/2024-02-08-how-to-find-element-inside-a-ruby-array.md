@@ -12,8 +12,6 @@ image:
   alt: How to find an element inside a Ruby array
 ---
 
-# How to find an element inside a Ruby array
-
 ## Use the filter or select method
 
 Like JavaScript, you can choose to `.filter` an Array
