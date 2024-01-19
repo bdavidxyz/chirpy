@@ -64,7 +64,7 @@ bin/rails db:create db:migrate
 ## Build a default test suite
 
 
-There's no surprise, I'm big fond of @lazaronnixon work about <a href="https://github.com/lazaronixon/authentication-zero" target="_blank">authentication-zero gem</a>, where you have an excellent laying ground to build a custom authentication system by yourself.
+There's no surprise, I'm big fond of <a href="https://twitter.com/lazaronixon" target="_blank">@lazaronixon</a> work about <a href="https://github.com/lazaronixon/authentication-zero" target="_blank">authentication-zero gem</a>, where you have an excellent laying ground to build a custom authentication system by yourself.
 
 And guess what, there's a full test suite (with system, integration, and unit tests) offered 🎁.
 
@@ -102,7 +102,7 @@ Finished in 11.980820s, 2.8379 runs/s, 5.0915 assertions/s.
 34 runs, 61 assertions, 0 failures, 0 errors, 0 skips
 ```
 
-It's more readable than first version, but it's still far away from what Jest has to offer in the JS world;.
+It's more readable than first version, but it's still far away from what Jest has to offer in the JS world.
 
 ## Add a better reporter for Minitest
 
@@ -155,7 +155,10 @@ Finished in 11.94632s
 
 ```
 
-Far better! Now we know how is the test suite organized. I personnally feel much better this way.
+Far better! Now we know how is the test suite organized. 
+
+I personnally feel much better this way 😊 Your tastes may vary of course.
+
 
 ## Summary
 
