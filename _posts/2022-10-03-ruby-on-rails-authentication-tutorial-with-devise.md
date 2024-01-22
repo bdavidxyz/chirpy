@@ -178,7 +178,7 @@ With your editor open the layout file: `my-app/app/views/layouts/application.htm
 
 and add this:
 
-```html
+```erb
 <div>
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
@@ -192,7 +192,7 @@ and add this:
 
 Like this:
 
-```html
+```erb
 <!DOCTYPE html>
 <html>
   <head>

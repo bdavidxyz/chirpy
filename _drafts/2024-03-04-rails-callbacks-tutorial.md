@@ -1,7 +1,7 @@
 ---
 title: Rails callbacks tutorial
 author: david
-date: 2024-02-12 11:33:00 +0800
+date: 2024-03-04 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: Authentication vs Authorization with Rails 7
 author: david
-date: 2024-01-29 11:33:00 +0800
+date: 2024-02-12 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false
