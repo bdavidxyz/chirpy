@@ -106,6 +106,6 @@ a.reject {|e| e.is_a?(Numeric) }
 
 ## Conclusion
 
-Iterate over a Ruby array is quite simple, given it's a big classic in programming. Just take time to feel at ease with the block notation, it's more or less like the anonymous JS functions.
+Iterate over a Ruby array is quite simple, given it's a big classic in programming. Just take time to feel at ease with the block notation, it's more or less like the anonymous JS functions. If you have a specific need, also have a look at the [Enumerable module](https://ruby-doc.org/3.3.0/Enumerable.html).
 
 
