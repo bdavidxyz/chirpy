@@ -12,11 +12,18 @@ image:
   alt: Logical or assignment (or equals) in Ruby
 ---
 
-## A first taste of ||= (or equal) in Ruby
-## Where would you use conditional assignment in Rails?
-## Verbose version
-## Javascript ||= Logical or assignment 
-## Other articles on the topic
+## How to add a Stimulus controller
 
+```shell
+bin/rails generate si
+```
 
+I don't always rely on Rails generator, I parcularly enjoy to write Rails migration file by myself.
 
+However I advise to stick with the generator for Stimulus, I find it safer.
+
+## How to remove a Stimulus controller
+
+```shell
+bin/rails generate si
+```
