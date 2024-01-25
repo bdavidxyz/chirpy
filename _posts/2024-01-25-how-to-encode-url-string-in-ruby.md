@@ -72,11 +72,11 @@ Ok they are not encoded. Which leads me to the last paragraph.
 
 ## Robustness of URL String encoding in Ruby
 
-I tried some other methods, but this one is definetely the one which works right now. I deliberately mentioned the year in the title of the topic, because I'm not fully sure this answer will be still valid in say, 2 or 3 years, but as of now, it's definetly the most robust way I've found (so far).
+I tried some other methods, but this one is definitely the one which works right now. I deliberately mentioned the year in the title of the topic, because I'm not fully sure this answer will be still valid in say, 2 or 3 years, but as of now, it's definitely the most robust way I've found (so far).
 
-Apart from characters that _actually_ belongs to a regular URL, I didn't found any other tricky stuff.
+Apart from characters that _actually_ belong to a regular URL, I didn't find any other tricky stuff.
 
-Depending of the use case, escaping those character might be a good or bad idea.
+Depending on the use case, escaping those characters might be a good or bad idea.
 
 ## Conclusion
 
