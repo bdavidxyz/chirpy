@@ -1,27 +1,28 @@
 ---
 title: Why is Ruby-on-Rails not more popular?
 author: david
-date: 2024-02-22 11:33:00 +0800
+date: 2024-02-05 11:33:00 +0800
 categories: [rails]
 tags: [rails, opinion]
 pin: false
 math: false
 mermaid: false
 image:
-  path: sth
-  alt: Why is Ruby-on-Rails not more popular?
+  path: https://res.cloudinary.com/bdavidxyz-com/image/upload/w_1600%2Ch_836%2Cq_100/l_text:Karla_72_bold:Why%20is%20Ruby-on-Rails%20not%20*more*%20popular%3F%2Cco_rgb:ffe4e6%2Cc_fit%2Cw_1400%2Ch_240/fl_layer_apply%2Cg_south_west%2Cx_100%2Cy_180/l_text:Karla_48:A%20French%20baguette%20story%2Cco_rgb:ffe4e680%2Cc_fit%2Cw_1400/fl_layer_apply%2Cg_south_west%2Cx_100%2Cy_100/newblog/globals/bg_me.jpg
+  alt: Why is Ruby-on-Rails not *more* popular?
 ---
+
 
 ## Intro
 
-I had once a conversation with an American at breakfast.
+I once had a conversation with an American at breakfast.
 
 He was eating a fresh French baguette, and seemed to be worried... his question finally was :
 
 > Why is that so good?
 {: .prompt-info } 
 
-Why Americans do not make such kind of bread was (for him) a mystery. Some cultural gap I guess?
+Why Americans do not make such kinds of bread was (for him) a mystery. Some cultural gap I guess?
 
 Now let's go back to the Rails community. If Rails is so 
 
@@ -31,7 +32,7 @@ Now let's go back to the Rails community. If Rails is so
 
 Finally,
 
-> If Rails is so good, why is Rails not **more** popular nowadays?
+> If Rails is **that** good, why is Rails not **more** popular nowadays?
 {: .prompt-danger }
 
 
@@ -41,28 +42,28 @@ From 2010's, most innovation was driven by UI development.
 
 Number of "component based" JS frameworks (Angular, Backbone...) popped up from every corner every single week.
 
-I admit that React is able to tackle any UI State, which was real pain before it appears.
+I admit that React is able to tackle any UI State, which was a real pain before it appeared.
 
-React has so much success (even nowadays) that arguing that it's not "only" a dev fashion, there were a cultural shift into the whole industry.
+React has so much success (even nowadays) that arguing that it's not "only" a dev fashion, there was a cultural shift into the whole industry.
 
 I'm not sure if it's an official quote, but :
 
 > The past is easier to predict than future
 {: .prompt-info }
 
-**It could have been another story**. Maybe response time or productivity could have led the whole industry, but for whatever reason, it didn't happened that way.
+**It could have been another story**. Maybe response time or productivity could have led the whole industry, but for whatever reason, it didn't happen that way.
 
 It was UI first.
 
 From 2015, it became bizarre to build an UI with a backend framework (maybe with some sprinkled vanillaJS and/or jQuery).
 
-So probably all backend-based framework started to decline (or reached their plateau) from this point, this is not specific to Rails.
+So probably all backend-based frameworks started to decline (or reached their plateau) from this point, this is not specific to Rails.
 
-Now React-ers seems to rediscover that UI State is not *everything* inside a software, and they start to add useful thing like SSR (with Next), backend (adding an /api route in last version of Next), etc.
+Now React-ers seems to rediscover that UI State is not *everything* inside a software, and they start to add useful things like SSR (with Next), backend (adding an /api route in the last version of Next), etc.
 
-Anyway, my opinion is that tackling the UI state problem is what has droven the industry in the last decade. It could have been performance or (human) productivity, but no, so React took the lead. All framework that renders HTML through plain old server-side templates (ERB for Rails) started to decline.
+Anyway, my opinion is that tackling the UI state problem is what has driven the industry in the last decade. It could have been performance or (human) productivity, but no, so React took the lead. All frameworks that render HTML through plain old server-side templates (ERB for Rails) started to decline.
 
-UI driven development lead Rails to be less popular as it was.
+UI driven development led Rails to be less popular as it was.
 
 ## A world of endless possibilities
 
@@ -95,15 +96,16 @@ But let's face it, the story could have been completely different if Rails was f
 
 Ruby itself cause Rails not to be more widely adopted (I guess).
 
+
 ## Static types
 
-Despite massive, universal adoption of JavaScript, both inside frontend and backend, the community worked hard to find a way to be splitted apart : TypeScript. (Am I sarcastic?)
+Despite massive, universal adoption of JavaScript, both inside frontend and backend, the web community worked hard to find a way to be splitted apart : TypeScript. (Am I sarcastic?)
 
-So it seems that having types is reassuring for most developers. I don't enjoy it much personnally, especially in the FrontEnd, but after all if the community likes it then "let it be".
+So it seems that having types is reassuring for most developers. I don't enjoy it much personally, especially in the FrontEnd, but after all if the community likes it then "let it be".
 
-Rubyist don't chase types too much - despite the nice "Sorbet" attempt, classic Ruby remain not strongly typed, which newcomers may dislike.
+Rubyist don't chase types too much - despite the nice "Sorbet" attempt, classic Ruby remains not strongly typed, which newcomers may dislike.
 
-## Economical recession
+## Economic recession
 
 Probably the worst argument in the list, but still : there are less job in the IT market than before.
 
@@ -111,11 +113,12 @@ Less of everything.
 
 So it also means less Rails. Alas.
 
+
 ## Not that bad, after all
 
-On a French job board that I particularly enjoy, there are currently 78 jobs with the keyword "Ruby", and 747 with the keyword "JavaScript" - one tenth of the gigantosaurus JS is already a big thing.
+On a French job board that I particularly enjoy, there are currently 78 jobs with the keyword "Ruby", and 747 with the keyword "JavaScript" - one tenth of the giganotosaurus JS is already a big thing.
 
-But where I really worry about the lack of opened junior position, as well as the few interest by new startups to start anything with Rails.
+But where I really worry about the lack of open junior positions, as well as the few interest by new startups to start anything with Rails.
 
 So I'm not sure the future is bright.
 
@@ -126,5 +129,5 @@ It's hard to see "no future" here.
 
 ## Conclusion
 
-I usually don't write opinion, here was one. It's not easy to explain why Rails (or the Rails philosophy) is not more widely adopted, so trying to explore hypothesis is an enjoyable exercice.
+I usually don't write opinions, here was one. It's not easy to explain why Rails (or the Rails philosophy) is not more widely adopted, so trying to explore hypotheses is an enjoyable exercise.
 
