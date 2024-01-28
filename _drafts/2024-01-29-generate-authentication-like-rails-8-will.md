@@ -2,8 +2,8 @@
 title: Generate authentication like Rails 8 will
 author: david
 date: 2024-01-29 11:33:00 +0800
-categories: [rails]
-tags: [rails]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails, authentication]
 pin: false
 math: false
 mermaid: false
@@ -16,7 +16,7 @@ image:
 
 Rails comes with no default way to authenticate the user, like Laravel does in the PHP world.
 
-For a long time, the Devise gem was the good-enough-way-to-go for Rails, but didn't reach 100% of adoption, for longly reddit debated reasons.
+For a long time, the Devise gem was the good-enough-way-to-go for Rails, but didn't reach 100% of adoption, for longly reddit-debated reasons.
 
 From DHH :
 
@@ -27,7 +27,7 @@ From DHH :
 
 The <a href="https://github.com/lazaronixon/authentication-zero" target="_blank">authentication-zero</a> gem is the closest solution so far.
 
-I used it I found it very enjoyable, very few lines of code, very easy to customize, full test suite to ensure that all my customisations doesn't generate any kind of regression. Finally, I added some custom turbo_stream on top of validation to ensure a top-notch user experience.
+I used it. I found it very enjoyable, very few lines of code, very easy to customize, full test suite to ensure that all my customisations don't generate any kind of regression. Finally, I added some custom turbo_stream on top of validation to ensure a top-notch user experience.
 
 The tutorial here is a simplified version of my current use.
 
@@ -50,7 +50,7 @@ Create a new Rails app like this :
 
 ```shell
 rails new myapp
-cd myapp 
+cd myapp
 
 ```
 
@@ -68,7 +68,7 @@ bin/rails generate authentication
 
 ```
 
-You now have routes, controllers, models, migrations, test, etc.
+You now have routes, controllers, models, migrations, tests, etc.
 
 ## Ensure the whole test suite pass
 
@@ -106,7 +106,7 @@ config.action_mailer.perform_deliveries = true
 
 ## Play with the application
 
-By default, there are no user in the development database.
+By default, there are no users in the development database.
 
 A first option is to add this inside the seed.rb file,
 
@@ -140,7 +140,7 @@ Great! You now have a new verified user (who said "customer"? Not yet ;) )
 
 ## Take time to read code
 
-Don't be too shy here to investigate the source code. The beauty of this gem is that there are no tons of complicated functions to read. Trying to understand [Devise](/blog/ruby-on-rails-authentication-tutorial-with-devise/) or [Rodauth](/blog/rails-authentication-with-rodauth-an-elegant-gem/) is another story. 
+Don't be too shy here to investigate the source code. The beauty of this gem is that there are no tons of complicated functions to read. Trying to understand [Devise](/blog/ruby-on-rails-authentication-tutorial-with-devise/) or [Rodauth](/blog/rails-authentication-with-rodauth-an-elegant-gem/) is another story.
 
 Start with routes.rb, then try to play with the application, and try to understand what each unit test does and why.
 

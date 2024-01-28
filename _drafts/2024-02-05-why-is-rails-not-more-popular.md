@@ -2,8 +2,8 @@
 title: Why is Ruby-on-Rails not more popular?
 author: david
 date: 2024-02-05 11:33:00 +0800
-categories: [rails]
-tags: [rails, opinion]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails, opinion]
 pin: false
 math: false
 mermaid: false

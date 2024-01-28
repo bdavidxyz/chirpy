@@ -1,18 +1,18 @@
 ---
-title: How to add or remove a Stimulus controller
+title: Custom turbo stream tutorial
 author: david
 date: 2024-02-22 11:33:00 +0800
-categories: [rails]
-tags: [rails,hotwire]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails,hotwire]
 pin: false
 math: false
 mermaid: false
 image:
   path: path
-  alt: How to add or remove a Stimulus controller
+  alt: Custom turbo stream tutorial
 ---
 
-## How to add a Stimulus controller
+## Custom 
 
 ```shell
 bin/rails generate stimulus foo

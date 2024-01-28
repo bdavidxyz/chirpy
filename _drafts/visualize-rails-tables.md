@@ -2,8 +2,8 @@
 title: Visualize Rails table
 author: david
 date: 2024-02-22 11:33:00 +0800
-categories: [rails]
-tags: [rails]
+categories: [ruby-on-rails]
+tags: [ruby-on-rails]
 pin: false
 math: false
 mermaid: false
