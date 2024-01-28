@@ -8,8 +8,8 @@ pin: false
 math: false
 mermaid: false
 image:
-  path: path
-  alt: Visualize Rails table
+  path: https://res.cloudinary.com/bdavidxyz-com/image/upload/w_1600%2Ch_836%2Cq_100/l_text:Karla_72_bold:Generate%20authentication%20like%20Rails%208%20will%2Cco_rgb:ffe4e6%2Cc_fit%2Cw_1400%2Ch_240/fl_layer_apply%2Cg_south_west%2Cx_100%2Cy_180/l_text:Karla_48:A%20tutorial%20and%20preview%2Cco_rgb:ffe4e680%2Cc_fit%2Cw_1400/fl_layer_apply%2Cg_south_west%2Cx_100%2Cy_100/newblog/globals/bg_me.jpg
+  alt: Generate authentication like Rails 8 will
 ---
 
 ## In the need for authenticator
@@ -28,6 +28,8 @@ From DHH :
 The <a href="https://github.com/lazaronixon/authentication-zero" target="_blank">authentication-zero</a> gem is the closest solution so far.
 
 I used it I found it very enjoyable, very few lines of code, very easy to customize, full test suite to ensure that all my customisations doesn't generate any kind of regression. Finally, I added some custom turbo_stream on top of validation to ensure a top-notch user experience.
+
+The tutorial here is a simplified version of my current use.
 
 ## Prerequisites
 
@@ -138,11 +140,11 @@ Great! You now have a new verified user (who said "customer"? Not yet ;) )
 
 ## Take time to read code
 
-Don't be too shy here to investigate the source code. The beauty of this gem is that there are no tons of complicated functions to read. Trying to understand Devise or Rodauth is another story. 
+Don't be too shy here to investigate the source code. The beauty of this gem is that there are no tons of complicated functions to read. Trying to understand [Devise](/blog/ruby-on-rails-authentication-tutorial-with-devise/) or [Rodauth](/blog/rails-authentication-with-rodauth-an-elegant-gem/) is another story. 
 
 Start with routes.rb, then try to play with the application, and try to understand what each unit test does and why.
 
-Now you hvae a full authentication system that you fully understand!
+Now you have a full authentication system that you fully understand!
 
 
 

@@ -6,7 +6,7 @@ def format_str(str)
   .scan(/.{1,3}/)
   # Rebuild a string
   .join("-")
-  # Swap chars so that ABC-D becomes AB-CD
+  # Swap chars (if needed) so that ABC-D becomes AB-CD
   .tap { |s| s[-2] == '-' ? (s[-2], s[-3] = s[-3], s[-2]) : s }
 end
 

@@ -16,9 +16,9 @@ image:
 
 Live-reloading is a well-known concept for JavaScripters : you change your code, save the file, and the browser automagically reflect the change, without the need to press the "F5" key.
 
-I [already tried with ViteJS](/blog/vitejs-rails-a-wonderful-combination/) 2 years ago.
+Actually I [already tried with ViteJS](/blog/vitejs-rails-a-wonderful-combination/) 2 years ago.
 
-Surprisingly, it has (not yet) been included in most backend frameworks, including Rails.
+Surprisingly, it has (not yet) been included by default in most backend frameworks, including Rails.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Surprisingly, it has (not yet) been included in most backend frameworks, includi
 ruby -v  # 3.3.0
 rails -v  # 7.1.3
 bundle -v  # 2.4.10
-node -v # 20.9.0
+node -v # 20.11.0
 git --version # 2.34.1
 ```
 
