@@ -3,7 +3,7 @@ title: Ruby-on-Rails authentication tutorial with Devise
 author: david
 date: 2022-10-03 11:33:00 +0800
 categories: [ruby-on-rails]
-tags: [ruby-on-rails]
+tags: [ruby-on-rails, authentication]
 pin: false
 math: false
 mermaid: false

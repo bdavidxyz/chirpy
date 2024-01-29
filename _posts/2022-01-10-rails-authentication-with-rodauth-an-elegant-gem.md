@@ -3,7 +3,7 @@ title: Rails authentication with Rodauth, an elegant Ruby gem
 author: david
 date: 2022-01-10 11:33:00 +0800
 categories: [ruby-on-rails]
-tags: [ruby-on-rails]
+tags: [ruby-on-rails, authentication]
 pin: false
 math: false
 mermaid: false
