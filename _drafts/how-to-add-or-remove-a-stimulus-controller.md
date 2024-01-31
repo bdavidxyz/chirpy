@@ -46,5 +46,5 @@ bin/rails destroy stimulus foo
 
 If not, then manually remove the two lines, and run `bin/rails stimulus:manifest:update`. 
 
-## Tutorial from scratch
+
 

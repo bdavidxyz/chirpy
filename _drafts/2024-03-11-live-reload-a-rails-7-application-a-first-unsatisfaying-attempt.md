@@ -1,7 +1,7 @@
 ---
 title: Live reload a Rails 7 application, a first unsatisfaying attempt
 author: david
-date: 2024-02-19 11:33:00 +0800
+date: 2024-03-11 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails]
 pin: false

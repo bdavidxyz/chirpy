@@ -105,6 +105,7 @@ So it seems that having types is reassuring for most developers. I don't enjoy i
 
 Rubyist don't chase types too much - despite the nice "Sorbet" attempt, classic Ruby remains not strongly typed, which newcomers may dislike.
 
+
 ## Economic recession
 
 Probably the worst argument in the list, but still : there are less job in the IT market than before.
