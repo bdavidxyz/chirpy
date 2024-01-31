@@ -1,5 +1,5 @@
 ---
-title: Get rid of Rails Failed to allocate memory (No MemoryError)
+title: Get rid of Rails Failed to allocate memory
 author: david
 date: 2024-03-14 06:33:00 +0800
 categories: [ruby-on-rails]

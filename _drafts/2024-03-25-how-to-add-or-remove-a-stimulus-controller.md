@@ -1,7 +1,7 @@
 ---
 title: How to add or remove a Stimulus controller
 author: david
-date: 2024-02-22 11:33:00 +0800
+date: 2024-03-25 11:33:00 +0800
 categories: [ruby-on-rails]
 tags: [ruby-on-rails,hotwire]
 pin: false
