@@ -11,6 +11,7 @@ image:
   path: https://res.cloudinary.com/bdavidxyz-com/image/upload/w_1600%2Ch_836%2Cq_100/l_text:Karla_72_bold:How%20to%20use%20the%20reduce%20method%20in%20Ruby%2Cco_rgb:ffe4e6%2Cc_fit%2Cw_1400%2Ch_240/fl_layer_apply%2Cg_south_west%2Cx_100%2Cy_180/l_text:Karla_48:Explanation%20and%20examples%2Cco_rgb:ffe4e680%2Cc_fit%2Cw_1400/fl_layer_apply%2Cg_south_west%2Cx_100%2Cy_100/newblog/globals/bg_me.jpg
   alt: How to use the reduce method in Ruby
 ---
+
 ## Why we use reduce
 
 You need the `.reduce` method when you want to transform a collection into a simple element (hence the name).
@@ -79,9 +80,9 @@ Notice in the last example, how the initial memo value affect the final result.
 Often the "sum array" example is given, but let's explore some other use case, in order to better understand how `.reduce` works.
 
 ```ruby
-{ 'a': 1, 'b': 2, 'c': 3 }.reduce({}) do |memo_array, (key, value)|  
-  memo_array[key] = value * 3;
-  memo_array
+{ 'a': 1, 'b': 2, 'c': 3 }.reduce({}) do |memo_h, (key, value)|  
+  memo_h[key] = value * 3;
+  memo_h
 end
 ```
 
