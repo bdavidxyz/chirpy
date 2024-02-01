@@ -18,9 +18,9 @@ If you're new to hashes, I wrote a [basic blog article about Ruby hashes](https:
 
 ## Is checking the key of a hash already exists in the Ruby API ?
 
-What if you want to check that a given hash has a given key ? Before to write any code, the first thing you should think about is "does this already exists somewhere in the API" ? 
+What if you want to check that a given hash has a given key ? Before writing any code, the first thing you should think about is "does this already exist somewhere in the API" ?
 
-It's very uncommon that a utility function is missing - excerpt may for JavaScript, for historical reasons. 
+It's very uncommon that a utility function is missing - excerpt may be for JavaScript, for historical reasons.
 
 But not for Ruby, even more in a Ruby-on-Rails environment.
 
@@ -59,7 +59,7 @@ true
 
 The Ruby hash has an expressive API for the most common use cases. You can use the .key? method instead of the !! seen above.
 
-It's a lot more readable for others developers.
+It's a lot more readable for other developers.
 
 Examples :
 
@@ -91,9 +91,9 @@ true
 
 ## The most robust possible answer
 
-So now what if you're not quite sure about the hash you're checking. 
+So now what if you're not quite sure about the hash you're checking.
 
-Case one :  You're not sure if the keys are symbol or not - think about a hash that is extracted from a remote API.
+Case one :  You're not sure if the keys are symbols or not - think about a hash that is extracted from a remote API.
 
 ```ruby
 $> my_hash.deep_symbolize_keys.try(:key?, :a)
@@ -107,10 +107,10 @@ $> my_hash.try(:key?, :a)
 true
 ```
 
-Note that this could be considered as over-engineering, depending of the context.
+Note that this could be considered as over-engineering, depending on the context.
 
 ## Conclusion
 
-Check if hash has key in Ruby is pretty straightforward, all you need is to pay a little attention in which context you're writing this verification.
+Checking if a hash has a key in Ruby is pretty straightforward, all you need is to pay a little attention in which context you're writing this verification.
 
 See also this <a href="https://stackoverflow.com/questions/4528506/how-to-check-if-a-specific-key-is-present-in-a-hash-or-not" target="_blank">SO question</a>.
