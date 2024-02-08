@@ -12,6 +12,7 @@ image:
   alt: How to find an element inside a Ruby array
 ---
 
+
 ## Use the filter or select method
 
 Like JavaScript, you can choose to `.filter` an Array
@@ -35,7 +36,7 @@ ary.filter((e) => e.includes('a'))
 Pretty similar right ?
 
 
-> Side note : When manipulating String, I find the `.include?` (Ruby) and `.includes` (JS) methods to be very confusing. I have to special tip to share here 😬 outside relying on IDE auto-completion.
+> Side note : When manipulating String, I find the `.include?` (Ruby) and `.includes` (JS) methods are very confusing. I have a special tip to share here 😬 outside relying on IDE auto-completion.
 {: .prompt-tip }
 
 
@@ -46,9 +47,9 @@ So both following method are the same :
 ```ruby
 ary = ['abc', 'bzz', 'aaa']
 ary.filter{|e| e.include?('a')}
-# [42, 44]
+# ["abc", "aaa"]
 ary.select{|e| e.include?('a')}
-# [42, 44]
+# ["abc", "aaa"]
 ```
 
 Example above emphasises that both are immutable : the `ary` variable didn't change between consecutives calls.
@@ -69,7 +70,7 @@ ary.include?(42)
 # false
 ```
 
-Note that the intent is not the same as the paragraph above, so it just depend on what you're looking for.
+Note that the intent is not the same as the paragraph above, so it just depends on what you're looking for.
 
 ## How to find the last element inside a Ruby array
 
@@ -114,7 +115,7 @@ ary.find{|e| e.include?('z')}
 
 ## How to find the nth matching element
 
-Something I didn't retrieve trivially is the way to find nth element to match a given condition.
+Something I didn't retrieve trivially is the way to find the nth element to match a given condition.
 
 First and last are easy. First match is easy.
 
@@ -127,7 +128,7 @@ ary = ['abc', 'bzz', 'aaa']
 ary.select{|e| e.include?('a')}[1]
 # => 'aaa'
 
-# Retrive 3rd element with 'a' char
+# Retrieve 3rd element with 'a' char
 ary.select{|e| e.include?('a')}[2]
 # => nil
 ```
@@ -164,4 +165,4 @@ ary.find_index{|e| e.include?('z')}
 
 ## Summary
 
-I wrote this article because I was wondering how to find the nth element that matches a given condition in a Ruby array. It was a good excuse to sum up how retrieve things inside a Ruby array.
+I wrote this article because I was wondering how to find the nth element that matches a given condition in a Ruby array. It was a good excuse to sum up how to retrieve things inside a Ruby array.
