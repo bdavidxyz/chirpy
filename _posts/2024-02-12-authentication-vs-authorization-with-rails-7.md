@@ -12,7 +12,6 @@ image:
   alt: Authentication vs Authorization with Rails 7
 ---
 
-
 Authorization means give or refuse access to the current User to some URLs (or more generally, any kind of resource.)
 
 It's closely bound to Authentication, but it's different.
@@ -21,21 +20,21 @@ Think about an international conference about climate change.
 
 Authentication is the entrance ticket, you can not enter the conference without the ticket.
 
-Authorization is about checking the ticket levels of access : does it allows you to access gate A or snack B?
+Authorization is about checking the ticket levels of access : does it allow you to access gate A or snack B?
 
 
 ## Authentication with Rails 7
 
-Now that Rails seems to promote generator for authentication (it will be the case in Rails 8), let's use the closest possibility (right now) : the auth-zero generator. 
+Now that Rails seems to promote generators for authentication (it will be the case in Rails 8), let's use the closest possibility (right now) : the auth-zero generator. 
 
 ## Prerequisites
 
 Tools I will use in this tutorial
 
 ```shell
-ruby -v  # 3.3.0
-rails -v  # 7.1.3
-bundle -v  # 2.4.10
+ruby -v # 3.3.0
+rails -v # 7.1.3
+bundle -v # 2.4.10
 node -v # 20.9.0
 git --version # 2.34.1
 ```
@@ -55,7 +54,7 @@ bin/rails generate authentication
 
 ```
 
-Great! So now we have a default rails app, augmented with authentication feature.
+Great! So now we have a default rails app, augmented with authentication features.
 
 
 
@@ -69,21 +68,21 @@ User.create(email: "simple@user.com", password_digest: BCrypt::Password.create("
 
 Now create the database
 
-```bash  
-  
-  # Create database and schema.rb
-  bin/rails db:create
-  bin/rails db:migrate
-  bin/rails db:seed
+```bash 
+ 
+ # Create database and schema.rb
+ bin/rails db:create
+ bin/rails db:migrate
+ bin/rails db:seed
 
 ``` 
 
 And launch the server :
 
-```bash  
-  # Launch the local web server
-  bin/rails server
-```  
+```bash 
+ # Launch the local web server
+ bin/rails server
+``` 
 
 Good! Now open localhost:3000 and try to authenticate with the user that is inside seed.rb
 
@@ -96,49 +95,49 @@ Now let's build 3 different pages : home page, profile page, and admin page.
 
 Welcome page like this :
 
-```bash  
-  echo "class WelcomeController < ApplicationController" > app/controllers/welcome_controller.rb
-  echo "end" >> app/controllers/welcome_controller.rb
-  mkdir app/views/welcome
-  echo '<h1>welcome page</h1>' > app/views/welcome/index.html.erb
-  
+```bash 
+ echo "class WelcomeController < ApplicationController" > app/controllers/welcome_controller.rb
+ echo "end" >> app/controllers/welcome_controller.rb
+ mkdir app/views/welcome
+ echo '<h1>welcome page</h1>' > app/views/welcome/index.html.erb
+ 
 ``` 
 
 Profile page like this :
 
-```bash  
-  echo "class ProfileController < ApplicationController" > app/controllers/profile_controller.rb
-  echo "end" >> app/controllers/profile_controller.rb
-  mkdir app/views/profile
-  echo '<h1>Profile page</h1>' > app/views/profile/index.html.erb
-  
+```bash 
+ echo "class ProfileController < ApplicationController" > app/controllers/profile_controller.rb
+ echo "end" >> app/controllers/profile_controller.rb
+ mkdir app/views/profile
+ echo '<h1>Profile page</h1>' > app/views/profile/index.html.erb
+ 
 ``` 
 
 And an admin page like this :
 
-```bash  
-  echo "class AdminController < ApplicationController" > app/controllers/admin_controller.rb
-  echo "end" >> app/controllers/admin_controller.rb
-  mkdir app/views/admin
-  echo '<h1>Admin only area!</h1>' > app/views/admin/index.html.erb
-  
+```bash 
+ echo "class AdminController < ApplicationController" > app/controllers/admin_controller.rb
+ echo "end" >> app/controllers/admin_controller.rb
+ mkdir app/views/admin
+ echo '<h1>Admin only area!</h1>' > app/views/admin/index.html.erb
+ 
 ``` 
 
 Now apply routes to these new pages :
 
-```ruby  
-  # inside config/routes.rb
-  Rails.application.routes.draw do
+```ruby 
+ # inside config/routes.rb
+ Rails.application.routes.draw do
 
-    # add these 3 lines
-    get "welcome", to: "welcome#index"
-    get "profile", to: "profile#index"
-    get "admin", to: "admin#index"
+  # add these 3 lines
+  get "welcome", to: "welcome#index"
+  get "profile", to: "profile#index"
+  get "admin", to: "admin#index"
 
-    # all other routes remain unchanged
-    # ...
+  # all other routes remain unchanged
+  # ...
 
-  end
+ end
 ``` 
 
 Relaunch your local web server, and try to access to the following URLs:
@@ -156,11 +155,11 @@ Yikes! None of them is available, unless you've gone through the login screen.
 
 Modify the HomeController as follow :
 
-```ruby  
+```ruby 
 # Inside app/controllers/welcome_controller.rb
 class WelcomeController < ApplicationController
 
-  skip_before_action :authenticate  # add this
+ skip_before_action :authenticate # add this
 
 end
 ```
@@ -174,9 +173,9 @@ So now open the welcome page again (http://locahost:3000/welcome), you should be
 
 Remember, authorization is linked to authentication, but is not exactly the same thing.
 
- - A simple visitor can view the home page, but can not access the user profile page
- - A user can access home page and profile page, but can not access the admin dashboard
- - An admin may access every part of the application
+- A simple visitor can view the home page, but can not access the user profile page
+- A user can access home page and profile page, but can not access the admin dashboard
+- An admin may access every part of the application
 
 So we need a "role" column now, in order to know _who_ has access to _what_
 
@@ -184,37 +183,37 @@ So we need a "role" column now, in order to know _who_ has access to _what_
 
 Back to your terminal, enter :
 
-```bash  
-  bin/rails generate migration add_role_to_users role:string
+```bash 
+ bin/rails generate migration add_role_to_users role:string
 ```
 
 Modify the migration file as follow :
 
 ```ruby 
 class AddRoleToUsers < ActiveRecord::Migration
-   def change
-      # modify as follow
-      add_column :users, :role, :string, :default => "customer"
-   end
+ def change
+   # modify as follow
+   add_column :users, :role, :string, :default => "customer"
+ end
 end
 ```
 
 And run
 
-```bash  
-  bin/rails db:migrate
+```bash 
+ bin/rails db:migrate
 ```
 
 Inside user.rb
 
-```ruby  
+```ruby 
 class User < ApplicationRecord
-  has_secure_password
+ has_secure_password
 
-  # add this line
-  enum role: {customer: "customer", admin: "admin"}
+ # add this line
+ enum role: {customer: "customer", admin: "admin"}
 
-  # ...rest of code
+ # ...rest of code
 end
 ```
 
@@ -230,24 +229,24 @@ User.create(email: "admin@user.com", role: 'admin', password_digest: BCrypt::Pas
 
 Recreate your database (you won't usually do this once you have a production database, but for a small tutorial, that's ok)
 
-```bash  
-  bin/rails db:drop db:create db:migrate db:seed
+```bash 
+ bin/rails db:drop db:create db:migrate db:seed
 ```
 
 Relaunch your local web server with
 
-```bash  
-  bin/rails server
+```bash 
+ bin/rails server
 ```
 
 And connect as customer@user.com, and try to access to localhost:3000/admin
 
-> Yikes! Even if we connect as customer, we have access to the admin area. We should have raised an authorization error, so now it's time for authorization with Pundit.
+> Yikes! Even if we connect as customers, we have access to the admin area. We should have raised an authorization error, so now it's time for authorization with Pundit.
 {: .prompt-danger }
 
 ## Rails 7 authorization with Pundit (finally!)
 
-It's time to add Pundit to clearly prevent unauthorized users to go everywhere inside our flashy webapp.
+It's time to add Pundit to clearly prevent unauthorized users from going everywhere inside our flashy webapp.
 
 Add `gem 'pundit'` to Gemfile:
 
@@ -265,18 +264,18 @@ Include Pundit in your application controller:
 
 ```ruby
 class ApplicationController < ActionController::Base
-    include Pundit::Authorization # add this line
+  include Pundit::Authorization # add this line
 
-  # was here before, left as-is
-  before_action :set_current_request_details
-  before_action :authenticate
+ # was here before, left as-is
+ before_action :set_current_request_details
+ before_action :authenticate
 
-  # add this method, required by Pundit
-  def current_user 
-    Current.user # this belongs to the authentication mechanism, so not Pundit
-  end
+ # add this method, required by Pundit
+ def current_user 
+  Current.user # this belongs to the authentication mechanism, so not Pundit
+ end
 
-  # rest of code ...
+ # rest of code ...
 
 end
 ```
@@ -300,11 +299,11 @@ Our `admin_policy.rb` only allows admin to go to the admin dashboard:
 
 ```ruby
 class AdminPolicy < ApplicationPolicy
-  attr_reader :user
+ attr_reader :user
 
-  def index?
-    return user.admin?
-  end
+ def index?
+  return user.admin?
+ end
 end
 ```
 
@@ -315,16 +314,16 @@ So now let's inject our policy into the controller.
 ```ruby
 class AdminController < ApplicationController
 
-  def index
-    authorize Current.user, policy_class: AdminPolicy
-  end  
+ def index
+  authorize Current.user, policy_class: AdminPolicy
+ end 
 
 end
 ```
 
 Yay! Not too much Rails magic here. We explicitly authorize the current user for a given policy.
 
-Now relaunch your web server, and try to connect as customer to the admin area. It should raise an error.
+Now relaunch your web server, and try to connect as a customer to the admin area. It should raise an error.
 
 Try to connect as admin to the admin area. It should work properly :)
 
@@ -334,11 +333,9 @@ How good is that ?
 
 We covered 2 major concept of any web app, from scratch :
 
- - Authentication, with a generator : Rails 8 will work like this, so we relied on a similar gem to achieve it.
- - Authorization, with a well-known gem, in order to know which user has access to which resource.
+- Authentication, with a generator : Rails 8 will work like this, so we relied on a similar gem to achieve it.
+- Authorization, with a well-known gem, in order to know which user has access to which resource.
 
 Have a good day then :) 
 
 David
-
-
