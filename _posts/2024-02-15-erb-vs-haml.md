@@ -17,7 +17,7 @@ This is an opinionated article about ERB and HAML with Rails. Let's compare each
 
 ## Use case
 
-In the Ruby-on-Rails word, they are known as templating languages. In the MVC concept, they represent "the View". Both are here to output HTML. 
+In the Ruby-on-Rails world, they are known as templating languages. In the MVC concept, they represent "the View". Both are here to output HTML. 
 
 ## Example
 
