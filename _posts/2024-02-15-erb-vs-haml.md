@@ -82,4 +82,4 @@ ERB.
 
 I've used both and I have to say HAML has one very big advantage  : a lot less verbosity. This is very handy for large template files. But large template files are not so frequent in an application if you properly cut them into small pieces - partial or view_components. 
 
-So now HAML big one advantage doesn't outreach the sum of its disadvantages  : hard to copy/paste from examples, and tricky corner cases notably.
+So now HAML's big one advantage doesn't outweigh the sum of its disadvantages : hard to copy/paste from examples, and tricky corner cases notably.
