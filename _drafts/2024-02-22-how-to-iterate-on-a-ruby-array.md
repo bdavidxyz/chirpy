@@ -29,7 +29,7 @@ a.each { |x| puts x }
 # 42
 ```
 
-If you are confused about the syntax, I wrote an article about [Ruby blocks, procs and lambda](/blog/ruby-block-procs-and-lambda/), so it's equivalent to the following :
+If you are confused about the syntax, I wrote an article about [Ruby blocks, procs and lambda](https://bootrails.com/blog/ruby-block-procs-and-lambda/), so it's equivalent to the following :
 
 ```ruby
 a.each do |x| 
@@ -91,7 +91,7 @@ You actually iterate on the array, in order to extract an array of the same size
 
 Note that array "a" is left unchanged.
 
-Lastly, I wrote an article about how to [map with index in Ruby](/blog/ruby-map-with-index/).
+Lastly, I wrote an article about how to [map with index in Ruby](https://bootrails.com/blog/ruby-map-with-index/).
 
 ## Do you want to reject unwanted values?
 

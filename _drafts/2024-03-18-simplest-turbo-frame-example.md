@@ -1,5 +1,5 @@
 ---
-title:  
+title:  The simplest turbo-frame example
 author: david
 date: 2024-03-18 11:33:00 +0800
 categories: [ruby-on-rails]

@@ -11,3 +11,15 @@
 @import 'layout/archives';
 @import 'layout/categories';
 @import 'layout/category-tag';
+
+@media (max-width: 532px) {
+	.hidden-mobile {
+	  display: none;
+	}
+}
+
+@media (min-width: 533px) {
+	.hidden-large {
+	  display: none;
+	}
+}
