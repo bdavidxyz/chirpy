@@ -15,9 +15,9 @@ image:
 
 Today I'm releasing a brand new Ruby-on-Rails starter kit.
 
-Free and open-source, so far :
+Here at 
 
-<a href="https://github.com/bdavidxyz/tailstart" target="_blank">https://github.com/bdavidxyz/tailstart</a>
+<a href="https://saaslit.com" target="_blank">saaslit.com</a>
 
 Yes, I know, starter kits are all the rage nowadays, and there are already established free and commercial products in the Ruby area. And in almost all other languages too.
 
@@ -107,9 +107,7 @@ Moreover, they have a generous free tier, and they accepted to offer paying comp
 
 So yes, that's it, deep integrated Flowbite and Rails starter kit!
 
-It's just the beginning, just clone the repo, give it a try, don't hesitate to ~~heavily criticize~~ give feedback.
-
-<a href="https://github.com/bdavidxyz/tailstart" target="_blank">https://github.com/bdavidxyz/tailstart</a>
+<a href="https://saaslit.com" target="_blank">saaslit.com</a>
 
 ## Summary
 
