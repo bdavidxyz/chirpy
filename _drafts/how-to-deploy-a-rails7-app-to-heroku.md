@@ -1,5 +1,5 @@
 ---
-title: Generate an open graph in Ruby
+title: How to deploy a Rails 7 app to Heroku
 author: david
 date: 2024-02-22 11:33:00 +0800
 categories: [ruby]
@@ -9,58 +9,121 @@ math: false
 mermaid: false
 image:
   path: path
-  alt: Generate an open graph in Ruby
+  alt: How to deploy a Rails 7 app to Heroku
 ---
 
 
-## Og image and generation
+## What is Heroku?
 
-Og image are the pictures that are displayed on social medias when you share a link. Automate their generation mean spend less time on plumbing, whereas maintaining a good.
+Heroku is the most well-known deployment platform, i.e. a place where to make your web application available to the public, on the wild Internet - so not just on your local machine.
 
-BTW,  <a href="https://ogp.me/" target="_blank">Open Graph</a> is a protocol that enables social medias to read your content. You will often find the following meta in any web page :
+Despite the raise of multiple competitors, for many years now, it is still unbeaten in terms of simplicity and ubiquity.
 
-```html
-<html prefix="og: https://ogp.me/ns#">
-<head>
-<title>My super title</title>
-<meta property="og:title" content="The Rock" />
-<meta property="og:type" content="video.movie" />
-<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-...
-</head>
+Heroku is so good, that they are able to increase prices despite the lack of roadmap - a miracle in the IT field.
+
+## The bare minimal Rails 7 application
+
+We are going to ensure that the deployed app is able to handle JS, CSS, and relational database. I see too many tutorials where a "Hello world" page is considered good enough. I personaly advise to try a little more than that, in order to compare deployment platforms from a broader perspective : assets compilation, database, seeding, and so on.
+
+## Prerequisites for this tutorial
+
+```shell
+ruby -v  # 3.3.0
+rails -v  # 7.1.3
+bundle -v  # 2.4.10
+node -v # 20.11.0
+git --version # 2.34.1
+psql --version # 14.11
 ```
 
-So here is a way to generate an actual og:image in Ruby, using Cloudinary
+## Build a simple Rails app
 
-## Generate og image method in Ruby
+Ok we take the most simple use case, so let's use _Boring Rails_™ here
 
-We will rely on cloudinary ability to generate layers on their image.
+```shell
+mkdir myapp && cd myapp 
+echo "source 'https://rubygems.org'" > Gemfile
+echo "gem 'rails', '7.1.3.2'" >> Gemfile
+bundle install
 
-I generated this code by reading a blog article about the same topic, in JS (<a href="https://delba.dev/blog/next-blog-generate-og-image" target="_blank">og image generation in NextJS</a>)
-
-```ruby
-def generate_image_url(title, subtitle)
-  base_url = "https://res.cloudinary.com/mycloudinaryid/image/upload"
-  image_options = "/w_1600,h_836,q_100"
-
-  title_text = "/l_text:Karla_72_bold:#{URI::Parser.new.escape(title)},co_rgb:ffe4e6,c_fit,w_1400,h_240"
-  subtitle_text = "/l_text:Karla_48:#{URI::Parser.new.escape(subtitle)},co_rgb:ffe4e680,c_fit,w_1400"
-
-  image_apply = "/fl_layer_apply,g_south_west,x_100,y_180"
-  subtitle_apply = "/fl_layer_apply,g_south_west,x_100,y_100"
-
-  background_image = "/path/to/myimage.jpg"
-
-  final_url = "#{base_url}#{image_options}#{title_text}#{image_apply}#{subtitle_text}#{subtitle_apply}#{background_image}"
-
-  return final_url.gsub('?', '%3F').gsub(',', '%2C')
-end
-
+bundle exec rails new . --force --database=postgresql -j=esbuild -c=tailwind
 ```
 
-All you have to do is to replace `mycloudinaryid` and `/path/to/myimage.jpg` by relevant content.
+So now we have a production-ready database (postgre), a JS builder (esbuild), a real-world framework (tailwind)
 
-## Summary
+## Add an authentication workflow
 
-Code example and cloudinary documentation should be self-speaking. You can this method in a Rails controller, or just inside a static website generator like Jekyll to get things done quickly.
+In order to have some logic, as well as a populated database, let's add an authentication gem.
+
+```shell
+bundle add authentication-zero
+bin/rails generate authentication
+bin/rails db:create db:migrate
+```
+
+## The bare minimal CSS and JS
+
+Just add a little bit of Tailwind classes on one element to see if CSS will work properly
+
+Inside `app/views/sessions/new.html.erb`, change the form submit as follow :
+
+```erb
+  <div data-controller="hello">
+    <%= form.submit "Sign in", data class: "text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" %>
+  </div>
+```
+
+And change `app/javascript/controllers/hello_controller.js` as follow :
+
+```js
+import { Controller } from "@hotwired/stimulus"
+
+export default class extends Controller {
+  connect() {
+    console.log("Stimulus is working!")
+  }
+}
+```
+
+## The Procfile
+
+The Procfile is an easy-to-understand text file, where you describe what will be run on each release
+
+Good news : you already have a Procfile.dev file for local developments.
+
+```shell
+web: env RUBY_DEBUG_OPEN=true bin/rails server
+js: yarn build --watch
+css: yarn build:css --watch
+```
+
+This is the local Procfile.dev - even if you don't know about it, you can guess it launches a server, and watch changes about js and css.
+
+Now add `Procfile` file like this, at the root of your project :
+
+```shell
+web: bundle exec puma -C config/puma.rb
+release: bin/rails db:migrate
+```
+
+## Before Heroku - check that everything is working locally
+
+Launch your app locally with
+
+```shell
+bin/dev
+```
+
+And open your browser at localhost:3000
+
+You should see the blue button for "sign in", meaning that Tailwind is working locally.
+
+You should see "Stimulus is working!" in the web dev console of the browser.
+
+Try to login with credentials - it should show an error.
+
+Good! So now we have something that is closer of an actual production webapp.
+
+## Deploy to Heroku
+
+
