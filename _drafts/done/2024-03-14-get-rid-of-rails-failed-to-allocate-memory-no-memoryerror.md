@@ -40,7 +40,6 @@ Don't be impatient like me. Here is what I did :
 I should have checked earlier that the problem was specific to the project. I mistakenly thought it was not the case after reinitializing everything.
 
 > Error doesn't come from what we don't know. It often comes from what we mistakenly admitted as true.
-{: .prompt-tip }
 
 I should have tried to reproduce the bug on another unlinked project.
 

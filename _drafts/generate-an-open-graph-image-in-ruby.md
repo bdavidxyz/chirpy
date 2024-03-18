@@ -15,7 +15,7 @@ image:
 
 ## Og image and generation
 
-Og image are the pictures that are displayed on social medias when you share a link. Automate their generation mean spend less time on plumbing, whereas maintaining a good.
+Og image are the pictures that are displayed on social medias when you share a link. Automate their generation mean spend less time on plumbing, whereas maintaining a good emotional link to your readers.
 
 BTW,  <a href="https://ogp.me/" target="_blank">Open Graph</a> is a protocol that enables social medias to read your content. You will often find the following meta in any web page :
 
@@ -31,7 +31,9 @@ BTW,  <a href="https://ogp.me/" target="_blank">Open Graph</a> is a protocol tha
 </head>
 ```
 
-So here is a way to generate an actual og:image in Ruby, using Cloudinary
+So here is a way to generate an actual og:image in Ruby, using Cloudinary.
+
+Cloudinary is a service that allows you to store image in the cloud, and to add any random text above it.
 
 ## Generate og image method in Ruby
 
