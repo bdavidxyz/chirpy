@@ -188,22 +188,22 @@ inside app/controllers/welcome_controller.rb
 ```ruby  
 class WelcomeController < ApplicationController  
   
-# welcome_path GET /welcome  
-# root_path GET /  
-def index  
-end  
-  
-# update_book_path POST /welcome/update_book  
-def update_book  
-p ''  
-p '--- extracted params are ---'  
-p book_params # will output {"title" => "gatsby"}  
-p ''  
-end  
-  
-def book_params  
-params.require(:book).permit(:title).to_h  
-end  
+  # welcome_path GET /welcome  
+  # root_path GET /  
+  def index  
+  end  
+    
+  # update_book_path POST /welcome/update_book  
+  def update_book  
+  p ''  
+  p '--- extracted params are ---'  
+  p book_params # will output {"title" => "gatsby"}  
+  p ''  
+  end  
+    
+  def book_params  
+  params.require(:book).permit(:title).to_h  
+  end  
   
 end  
 ```  

@@ -1,5 +1,6 @@
 ---
 title: Ruby regex, a friendly guide
+redirect_to: https://saaslit.com/blog/ruby/ruby-regex-guide
 author: david
 date: 2022-02-03 11:33:00 +0800
 categories: [ruby]

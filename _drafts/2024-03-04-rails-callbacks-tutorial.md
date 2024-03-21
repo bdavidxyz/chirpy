@@ -12,7 +12,6 @@ image:
   alt: Rails callbacks tutorial
 ---
 
-
 ## Definition of a callback
 
 To begin with, let's remember that methods in Ruby are a collection of statements that returns the result, and in general they are similar to functions with a set of expressions. Within a method, you can perform a specific task that can be invoked from other areas of the application.
