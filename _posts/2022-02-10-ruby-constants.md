@@ -1,5 +1,6 @@
 ---
 title: Ruby constants
+redirect_to: https://alsohelp.com/blog/ruby-constants
 author: david
 date: 2022-02-10 11:33:00 +0800
 categories: [ruby]
