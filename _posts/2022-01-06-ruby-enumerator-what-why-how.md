@@ -1,5 +1,6 @@
 ---
 title: Ruby Enumerator, the what, the why, the how
+redirect_to: https://alsohelp.com/blog/ruby-enumerator-what-why-how
 author: david
 date: 2022-01-06 11:33:00 +0800
 categories: [ruby]
