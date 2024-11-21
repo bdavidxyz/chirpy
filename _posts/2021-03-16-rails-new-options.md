@@ -1,5 +1,6 @@
 ---
 title: Rails new app, options, and minimalistic approach
+redirect_to: https://alsohelp.com/blog/rails-new-options
 author: david
 date: 2021-03-16 11:33:00 +0800
 categories: [ruby-on-rails]

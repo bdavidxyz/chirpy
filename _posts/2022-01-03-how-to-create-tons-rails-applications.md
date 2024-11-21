@@ -1,5 +1,6 @@
 ---
 title: How to create tons of Rails applications
+redirect_to: https://alsohelp.com/blog/how-to-create-tons-of-rails-apps
 author: david
 date: 2022-01-03 11:33:00 +0800
 categories: [ruby-on-rails]
