@@ -1,5 +1,6 @@
 ---
 title: How to create a custom Bootstrap theme for Rails
+review: deprecated
 author: david
 date: 2021-04-06 11:33:00 +0800
 categories: [ruby-on-rails]

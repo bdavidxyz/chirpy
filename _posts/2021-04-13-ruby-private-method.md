@@ -1,5 +1,6 @@
 ---
 title: Ruby private method, a hack
+redirect_to: https://alsohelp.com/blog/ruby-private-methods-hack
 author: david
 date: 2021-04-13 11:33:00 +0800
 categories: [ruby]

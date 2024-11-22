@@ -1,5 +1,6 @@
 ---
 title: Tailwind vs Bootstrap, from a Rails developer point of view
+review: deprecate
 author: david
 date: 2021-04-06 11:33:00 +0800
 categories: [ruby-on-rails]

@@ -1,5 +1,6 @@
 ---
 title: Webpacker vs Sprockets, the battle is over
+review: deprecated
 author: david
 date: 2021-04-01 11:33:00 +0800
 categories: [ruby-on-rails]
