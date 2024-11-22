@@ -1,5 +1,6 @@
 ---
 title: Active Support, Rails delightful additions to Ruby
+redirect_to: https://alsohelp.com/blog/rails-active-support
 author: david
 date: 2021-03-11 11:33:00 +0800
 categories: [ruby-on-rails]
@@ -15,7 +16,7 @@ image:
 
 ## About 
 
-[Sebastien](https://twitter.com/websebdev), has written a course about ActiveSupport, which is [available here](https://courses.webseb.dev/activesupport-the-unnocited-power-behind-rails). Below is an interview of Sebastien.
+[Sebastien](https://x.com/websebdev), has written a course about ActiveSupport, which is [available here](https://courses.webseb.dev/activesupport-the-unnocited-power-behind-rails). Below is an interview of Sebastien.
 
 ## What Is ActiveSupport ? 
 

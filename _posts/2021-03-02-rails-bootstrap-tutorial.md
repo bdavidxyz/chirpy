@@ -1,5 +1,6 @@
 ---
 title: Rails 6, Bootstrap 5, a tutorial
+review: deprecated
 author: david
 date: 2021-03-02 11:33:00 +0800
 categories: [ruby-on-rails]

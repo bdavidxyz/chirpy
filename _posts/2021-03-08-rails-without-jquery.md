@@ -1,5 +1,6 @@
 ---
 title: Rails without jQuery, a new journey has started
+review: deprecated
 author: david
 date: 2021-03-08 11:33:00 +0800
 categories: [ruby-on-rails]
