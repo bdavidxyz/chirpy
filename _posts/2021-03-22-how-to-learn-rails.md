@@ -1,5 +1,6 @@
 ---
 title: How to learn Rails when you already have coding experience
+redirect_to: https://alsohelp.com/blog/how-to-learn-rails
 author: david
 date: 2021-03-22 11:33:00 +0800
 categories: [ruby-on-rails]

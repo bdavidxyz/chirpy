@@ -1,5 +1,6 @@
 ---
 title: Check emptiness in Ruby, nil? vs blank? vs empty? vs presence?
+redirect_to: https://alsohelp.com/blog/ruby-nil-vs-blank-vs-empty-vs-presence
 author: david
 date: 2021-03-30 11:33:00 +0800
 categories: [ruby]
