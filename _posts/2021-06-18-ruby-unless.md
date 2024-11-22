@@ -1,5 +1,6 @@
 ---
 title: Ruby, The 'unless' keyword
+redirect_to: https://alsohelp.com/blog/ruby-unless
 author: david
 date: 2021-06-18 11:33:00 +0800
 categories: [ruby]

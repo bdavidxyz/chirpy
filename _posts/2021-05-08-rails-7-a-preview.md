@@ -1,5 +1,6 @@
 ---
 title: Rails 7, a preview
+review: deprecated
 author: david
 date: 2021-05-08 11:33:00 +0800
 categories: [ruby-on-rails]

@@ -1,5 +1,6 @@
 ---
 title: Rails with Webpacker, a full setup
+review: deprecated
 author: david
 date: 2021-05-18 11:33:00 +0800
 categories: [ruby-on-rails]
