@@ -1,5 +1,6 @@
 ---
 title: Rails, How to work with Bootstrap v5
+review: deprecated
 author: david
 date: 2021-05-06 11:33:00 +0800
 categories: [ruby-on-rails]

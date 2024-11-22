@@ -1,5 +1,6 @@
 ---
 title: How to write a switch statement in Ruby
+redirect_to: https://alsohelp.com/blog/switch-case-statement-ruby
 author: david
 date: 2021-04-27 11:33:00 +0800
 categories: [ruby]
