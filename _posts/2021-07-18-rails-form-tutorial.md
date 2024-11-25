@@ -1,5 +1,6 @@
 ---
 title: Rails form, tutorial from the ground
+redirect_to: https://alsohelp.com/blog/rails-form-tutorial
 author: david
 date: 2021-07-18 11:33:00 +0800
 categories: [ruby-on-rails]
