@@ -1,5 +1,6 @@
 ---
 title: Rails 7, Bootstrap 5 tutorial, fear and relief
+review: deprecate
 author: david
 date: 2021-12-20 11:33:00 +0800
 categories: [ruby-on-rails]
