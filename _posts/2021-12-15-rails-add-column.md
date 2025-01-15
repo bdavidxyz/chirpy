@@ -1,5 +1,6 @@
 ---
 title: How to add a column with Rails
+redirect_to: https://alsohelp.com/blog/blog/rails-add-column
 author: david
 date: 2021-12-15 11:33:00 +0800
 categories: [ruby-on-rails]
