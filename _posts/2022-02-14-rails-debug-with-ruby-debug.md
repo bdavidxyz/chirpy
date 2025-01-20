@@ -1,5 +1,6 @@
 ---
 title: Debug Rails 7 with ruby/debug
+redirect_to: https://alsohelp.com/blog/rails-debug-with-ruby-debug
 author: david
 date: 2022-02-14 11:33:00 +0800
 categories: [ruby-on-rails]
