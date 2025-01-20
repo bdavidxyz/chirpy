@@ -1,5 +1,6 @@
 ---
 title: Ruby, map with index
+redirect_to: https://alsohelp.com/blog/ruby-map-with-index
 author: david
 date: 2022-01-20 11:33:00 +0800
 categories: [ruby]
