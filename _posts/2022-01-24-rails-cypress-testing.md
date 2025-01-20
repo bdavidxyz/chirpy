@@ -1,5 +1,6 @@
 ---
 title: Rails, Cypress, testing the whole stack is definitely easier
+redirect_to: https://alsohelp.com/blog/rails-cypress-testing
 author: david
 date: 2022-01-24 11:33:00 +0800
 categories: [ruby-on-rails]
