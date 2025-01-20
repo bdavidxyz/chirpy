@@ -1,5 +1,6 @@
 ---
 title: Ruby - attr_accessor, attr_writer, and attr_reader
+redirect_to: https://alsohelp.com/blog/ruby-accessor
 author: david
 date: 2022-02-24 11:33:00 +0800
 categories: [ruby]
