@@ -1,5 +1,6 @@
 ---
 title: Milliseconds in Ruby
+redirect_to: https://alsohelp.com/blog/ruby-milliseconds
 author: david
 date: 2022-01-27 11:33:00 +0800
 categories: [ruby]
