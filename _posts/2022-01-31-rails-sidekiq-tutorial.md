@@ -1,5 +1,6 @@
 ---
 title: Rails, Sidekiq, full tutorial
+redirect_to: https://alsohelp.com/blog/rails-sidekiq-tutorial
 author: david
 date: 2022-01-31 11:33:00 +0800
 categories: [ruby-on-rails]
