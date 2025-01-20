@@ -1,5 +1,6 @@
 ---
 title: Ruby strftime, short and long story
+redirect_to: https://alsohelp.com/blog/ruby-strftime-short-and-long-story
 author: david
 date: 2022-01-13 11:33:00 +0800
 categories: [ruby]
