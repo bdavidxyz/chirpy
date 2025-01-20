@@ -1,5 +1,6 @@
 ---
 title: Action Mailer, a tutorial
+redirect_to: https://alsohelp.com/blog/action-mailer-tutorial
 author: david
 date: 2022-02-21 11:33:00 +0800
 categories: [ruby-on-rails]
