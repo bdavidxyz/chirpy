@@ -1,5 +1,6 @@
 ---
 title: Custom esbuild for Rails
+redirect_to: https://alsohelp.com/blog/custom-esbuild-for-rails
 author: david
 date: 2022-02-07 11:33:00 +0800
 categories: [ruby-on-rails]
