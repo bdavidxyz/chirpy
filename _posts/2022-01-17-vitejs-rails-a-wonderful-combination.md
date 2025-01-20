@@ -1,5 +1,6 @@
 ---
 title: ViteJS, Rails, a wonderful combination
+redirect_to: https://alsohelp.com/blog/vitejs-rails-a-wonderful-combination
 author: david
 date: 2022-01-17 11:33:00 +0800
 categories: [ruby-on-rails]
